@@ -1,0 +1,10 @@
+/jarvisenv
+/engine/__pycache__
+
+# Ignore all .db files
+*.db
+
+# Ignore all .csv files
+*.csv
+
+/engine/cookies.json

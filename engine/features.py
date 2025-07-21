@@ -1,75 +1,91 @@
 import os
 import json
-import sqlite3
-import struct
-import subprocess
-import time
 import webbrowser
-from urllib.parse import quote
-from engine.db import cursor
 import requests
-import pyautogui
 import pywhatkit as kit
 import eel
-import pvporcupine
-import pyaudio
+import speech_recognition as sr
 from playsound import playsound
-from engine.voice import speak
+from engine.db import cursor
+from engine.voice import speak, takecommand
 from engine.config import ASSISTANT_NAME
 from engine.helper import extract_yt_term
 
 # Global chat history
 chat_history = []
 
-# # Connect DB
-# con = sqlite3.connect('jarvis.db')
-# cursor = con.cursor()
+# === HOTWORD DETECTION ===
+def hotword():
+    recognizer = sr.Recognizer()
+    mic = sr.Microphone()
 
-def handleCommand(query):
-    print(f">> Handling Command: {query}")
-    allCommands(query)
+    with mic as source:
+        recognizer.adjust_for_ambient_noise(source)
 
-def allCommands(query):
-    query = query.lower()
+    print("🎙️ Hotword listener active... Say 'Jarvis' to activate.")
+    speak("Say 'Jarvis' to activate me")
 
-    if "open" in query:
-        openCommand(query)  # ✅ This triggers your working openCommand function
-    elif "play" in query and "youtube" in query:
-        playYoutube(query)
-    elif "whatsapp" in query:
-        # WhatsApp demo, actual number mapping can be added later
-        whatsApp("+911234567890", "Hello", "message", "Demo User")
-    else:
-        chatBot(query)
+    while True:
+        with mic as source:
+            print("🔍 Listening for wake word...")
+            audio = recognizer.listen(source)
 
+        try:
+            text = recognizer.recognize_google(audio).lower()
+            print("You said:", text)
+
+            if "jarvis" in text:
+                print("✅ Hotword detected: JARVIS")
+                speak("Yes, I am here")
+
+                # Run allCommands in a new thread so hotword listener stays alive
+                threading.Thread(target=allCommands).start()
+
+        except sr.UnknownValueError:
+            continue
+        except Exception as e:
+            print("Hotword error:", e)
+
+# === OPEN COMMAND ===
+def openCommand(query):
+    try:
+        query = query.replace("open", "").strip().lower()
+
+        # Web command
+        cursor.execute("SELECT url FROM web_command WHERE LOWER(name) = ?", (query,))
+        web_result = cursor.fetchone()
+        if web_result:
+            url = web_result[0]
+            speak(f"Opening {query}")
+            webbrowser.open(url)
+            print(f"Opening website: {url}")
+            return
+
+        # System app command
+        cursor.execute("SELECT path FROM sys_command WHERE LOWER(name) = ?", (query,))
+        sys_result = cursor.fetchone()
+        if sys_result:
+            path = sys_result[0]
+            speak(f"Opening {query}")
+            os.startfile(path)
+            print(f"Launching system app: {path}")
+            return
+
+        # Not found
+        speak(f"Sorry, I couldn't find {query}")
+        print(f"[✘] No entry found for '{query}'")
+
+    except Exception as e:
+        print("OpenCommand‑Error:", e)
+        speak("Error while trying to open the application.")
+
+# === PLAY YOUTUBE ===
 def playYoutube(query):
     search_query = extract_yt_term(query)
     speak(f"Playing {search_query} on YouTube")
     kit.playonyt(search_query)
 
-def whatsApp(mobile_no, message, flag, name):
-    tabs = {'message': 12, 'call': 7, 'video': 6}
-    jarvis_msg = {
-        'message': f"Message sent successfully to {name}",
-        'call': f"Calling {name}",
-        'video': f"Starting video call with {name}"
-    }
-
-    target_tab = tabs.get(flag, 12)
-    encoded_msg = quote(message or "")
-    url = f"whatsapp://send?phone={mobile_no}&text={encoded_msg}"
-
-    subprocess.run(f'start "" "{url}"', shell=True)
-    time.sleep(5)
-    subprocess.run(f'start "" "{url}"', shell=True)
-
-    pyautogui.hotkey('ctrl', 'f')
-    for _ in range(1, target_tab):
-        pyautogui.hotkey('tab')
-    pyautogui.hotkey('enter')
-
-    speak(jarvis_msg.get(flag, "Done"))
-
+# === CHATBOT ===
 def chatBot(query):
     global chat_history
     try:
@@ -101,3 +117,25 @@ def chatBot(query):
         speak("Sorry, something went wrong with the AI model.")
         print("ChatBot Error:", e)
         return "Error"
+
+# === COMMAND ROUTING ===
+def allCommands(query=None):
+    if query is None:
+        query = takecommand()
+    
+    query = query.lower()
+
+    if "open" in query:
+        openCommand(query)
+    elif "play" in query and "youtube" in query:
+        playYoutube(query)
+    elif "whatsapp" in query:
+        # Add WhatsApp logic here
+        pass
+    else:
+        chatBot(query)
+
+# === VOICE ACTIVATED LISTENER WRAPPER ===
+def handleCommand(query):
+    print(f">> Handling Command: {query}")
+    allCommands(query)
