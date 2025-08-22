@@ -1,0 +1,98 @@
+2025-08-21 00:56:18,881 INFO: ChatbotManager using OllamaService
+2025-08-21 00:56:21,347 INFO: ChatbotManager using OllamaService
+2025-08-21 00:56:21,354 INFO: ChatbotManager using OllamaService
+2025-08-21 01:11:24,623 INFO: ChatbotManager using OllamaService
+2025-08-21 01:11:27,025 INFO: ChatbotManager using OllamaService
+2025-08-21 01:11:27,027 INFO: ChatbotManager using OllamaService
+2025-08-21 01:31:42,413 INFO: ChatbotManager using OllamaService
+2025-08-21 01:31:44,811 INFO: ChatbotManager using OllamaService
+2025-08-21 01:31:44,811 INFO: ChatbotManager using OllamaService
+2025-08-21 01:32:06,336 ERROR: OllamaService error
+Traceback (most recent call last):
+  File "D:\my-assistant12\engine\services\ollama_service.py", line 16, in get_response
+    resp.raise_for_status()
+  File "D:\My-Assistant12\Assistent_env\lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: http://localhost:11434/api/generate
+2025-08-21 01:32:19,601 ERROR: OllamaService error
+Traceback (most recent call last):
+  File "D:\my-assistant12\engine\services\ollama_service.py", line 16, in get_response
+    resp.raise_for_status()
+  File "D:\My-Assistant12\Assistent_env\lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: http://localhost:11434/api/generate
+2025-08-21 01:32:28,827 ERROR: OllamaService error
+Traceback (most recent call last):
+  File "D:\my-assistant12\engine\services\ollama_service.py", line 16, in get_response
+    resp.raise_for_status()
+  File "D:\My-Assistant12\Assistent_env\lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: http://localhost:11434/api/generate
+2025-08-21 01:32:54,020 ERROR: openCommand error
+Traceback (most recent call last):
+  File "D:\my-assistant12\engine\command.py", line 101, in openCommand
+    os.startfile(path)
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'C:\\Windows\notepad.exe'
+2025-08-21 01:32:58,566 ERROR: OllamaService error
+Traceback (most recent call last):
+  File "D:\my-assistant12\engine\services\ollama_service.py", line 16, in get_response
+    resp.raise_for_status()
+  File "D:\My-Assistant12\Assistent_env\lib\site-packages\requests\models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: http://localhost:11434/api/generate
+2025-08-21 01:46:23,877 INFO: ChatbotManager using OllamaService
+2025-08-21 01:46:26,725 INFO: ChatbotManager using OllamaService
+2025-08-21 01:46:26,725 INFO: ChatbotManager using OllamaService
+2025-08-21 02:01:53,443 INFO: ChatbotManager using OllamaService
+2025-08-21 02:01:55,918 INFO: ChatbotManager using OllamaService
+2025-08-21 02:01:55,918 INFO: ChatbotManager using OllamaService
+2025-08-21 02:03:43,931 INFO: ChatbotManager using OllamaService
+2025-08-21 02:03:46,642 INFO: ChatbotManager using OllamaService
+2025-08-21 02:03:46,642 INFO: ChatbotManager using OllamaService
+2025-08-21 02:05:24,490 INFO: ChatbotManager using OllamaService
+2025-08-21 02:05:26,931 INFO: ChatbotManager using OllamaService
+2025-08-21 02:05:26,933 INFO: ChatbotManager using OllamaService
+2025-08-21 02:06:02,398 INFO: ChatbotManager using OllamaService
+2025-08-21 02:06:04,774 INFO: ChatbotManager using OllamaService
+2025-08-21 02:06:04,776 INFO: ChatbotManager using OllamaService
+2025-08-21 02:06:53,668 INFO: ChatbotManager using OllamaService
+2025-08-21 02:06:56,284 INFO: ChatbotManager using OllamaService
+2025-08-21 02:06:56,299 INFO: ChatbotManager using OllamaService
+2025-08-21 02:09:35,748 INFO: ChatbotManager using OllamaService
+2025-08-21 02:09:38,344 INFO: ChatbotManager using OllamaService
+2025-08-21 02:09:38,352 INFO: ChatbotManager using OllamaService
+2025-08-21 02:10:53,894 INFO: ChatbotManager using OllamaService
+2025-08-21 02:10:56,456 INFO: ChatbotManager using OllamaService
+2025-08-21 02:10:56,469 INFO: ChatbotManager using OllamaService
+2025-08-21 02:17:22,798 INFO: ChatbotManager using OllamaService
+2025-08-21 02:17:24,994 INFO: ChatbotManager using OllamaService
+2025-08-21 02:17:24,994 INFO: ChatbotManager using OllamaService
+2025-08-21 02:18:24,867 INFO: ChatbotManager using OllamaService
+2025-08-21 02:18:27,254 INFO: ChatbotManager using OllamaService
+2025-08-21 02:18:27,275 INFO: ChatbotManager using OllamaService
+2025-08-21 10:25:01,653 INFO: ChatbotManager using OllamaService
+2025-08-21 10:25:04,252 INFO: ChatbotManager using OllamaService
+2025-08-21 10:25:04,252 INFO: ChatbotManager using OllamaService
+2025-08-21 10:26:35,165 INFO: ChatbotManager using OllamaService
+2025-08-21 10:26:37,434 INFO: ChatbotManager using OllamaService
+2025-08-21 10:26:37,439 INFO: ChatbotManager using OllamaService
+2025-08-21 11:03:57,030 INFO: ChatbotManager using OllamaService
+2025-08-21 11:04:00,611 INFO: ChatbotManager using OllamaService
+2025-08-21 11:04:00,625 INFO: ChatbotManager using OllamaService
+2025-08-22 12:09:25,798 INFO: ChatbotManager using OllamaService
+2025-08-22 12:09:28,699 INFO: ChatbotManager using OllamaService
+2025-08-22 12:09:28,714 INFO: ChatbotManager using OllamaService
+2025-08-23 00:47:44,040 INFO: ChatbotManager using OllamaService
+2025-08-23 00:47:46,746 INFO: ChatbotManager using OllamaService
+2025-08-23 00:47:46,750 INFO: ChatbotManager using OllamaService
+2025-08-23 00:57:44,886 INFO: ChatbotManager using OllamaService
+2025-08-23 00:57:47,461 INFO: ChatbotManager using OllamaService
+2025-08-23 00:57:47,464 INFO: ChatbotManager using OllamaService
+2025-08-23 01:07:37,504 INFO: ChatbotManager using OllamaService
+2025-08-23 01:07:39,826 INFO: ChatbotManager using OllamaService
+2025-08-23 01:07:39,826 INFO: ChatbotManager using OllamaService
+2025-08-23 01:08:32,032 INFO: ChatbotManager using OllamaService
+2025-08-23 01:08:35,310 INFO: ChatbotManager using OllamaService
+2025-08-23 01:08:35,338 INFO: ChatbotManager using OllamaService
+2025-08-23 01:15:46,484 INFO: ChatbotManager using OllamaService
+2025-08-23 01:15:48,355 INFO: ChatbotManager using OllamaService
