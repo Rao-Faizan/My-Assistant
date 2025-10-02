@@ -406,6 +406,10 @@ body {
     color: white;
     background: #0045ff;
 }
+.chat-container { padding: 10px; max-height: 400px; overflow-y: auto; }
+.user-msg { text-align: right; background: #007bff; color: white; padding: 8px; margin: 5px; border-radius: 10px; }
+.ai-msg { text-align: left; background: #f1f1f1; padding: 8px; margin: 5px; border-radius: 10px; }
+
 
 @media (max-width: 768px) {
     .central-holo { width: 300px; height: 300px; }

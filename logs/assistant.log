@@ -96,3 +96,43 @@ requests.exceptions.HTTPError: 404 Client Error: Not Found for url: http://local
 2025-08-23 01:08:35,338 INFO: ChatbotManager using OllamaService
 2025-08-23 01:15:46,484 INFO: ChatbotManager using OllamaService
 2025-08-23 01:15:48,355 INFO: ChatbotManager using OllamaService
+2025-08-23 01:15:48,360 INFO: ChatbotManager using OllamaService
+2025-08-23 10:54:35,289 INFO: ChatbotManager using OllamaService
+2025-08-23 10:54:40,848 INFO: ChatbotManager using OllamaService
+2025-08-23 10:54:40,855 INFO: ChatbotManager using OllamaService
+2025-08-23 12:45:27,805 INFO: ChatbotManager using OllamaService
+2025-08-23 12:45:30,403 INFO: ChatbotManager using OllamaService
+2025-08-23 12:45:30,404 INFO: ChatbotManager using OllamaService
+2025-08-23 12:49:22,125 INFO: ChatbotManager using OllamaService
+2025-08-23 12:49:24,833 INFO: ChatbotManager using OllamaService
+2025-08-23 12:49:24,833 INFO: ChatbotManager using OllamaService
+2025-08-30 12:32:32,262 INFO: ChatbotManager using OllamaService
+2025-08-30 12:32:37,067 INFO: ChatbotManager using OllamaService
+2025-08-30 12:32:37,067 INFO: ChatbotManager using OllamaService
+2025-08-30 12:32:39,469 ERROR: start() error
+Traceback (most recent call last):
+  File "D:\my-assistant12\main.py", line 94, in start
+    eel.start(INDEX_PAGE, mode=None, block=True)
+  File "D:\my-assistant12\Assistent_env\lib\site-packages\eel\__init__.py", line 200, in start
+    run_lambda()
+  File "D:\my-assistant12\Assistent_env\lib\site-packages\eel\__init__.py", line 191, in run_lambda
+    btl.run(
+  File "D:\my-assistant12\Assistent_env\lib\site-packages\bottle.py", line 3175, in run
+    server.run(app)
+  File "D:\my-assistant12\Assistent_env\lib\site-packages\bottle_websocket\server.py", line 17, in run
+    server.serve_forever()
+  File "D:\my-assistant12\Assistent_env\lib\site-packages\gevent\baseserver.py", line 398, in serve_forever
+    self.start()
+  File "D:\my-assistant12\Assistent_env\lib\site-packages\gevent\baseserver.py", line 336, in start
+    self.init_socket()
+  File "D:\my-assistant12\Assistent_env\lib\site-packages\gevent\pywsgi.py", line 1668, in init_socket
+    StreamServer.init_socket(self)
+  File "D:\my-assistant12\Assistent_env\lib\site-packages\gevent\server.py", line 173, in init_socket
+    self.socket = self.get_listener(self.address, self.backlog, self.family)
+  File "D:\my-assistant12\Assistent_env\lib\site-packages\gevent\server.py", line 185, in get_listener
+    return _tcp_listener(address, backlog=backlog, reuse_addr=cls.reuse_addr, family=family)
+  File "D:\my-assistant12\Assistent_env\lib\site-packages\gevent\server.py", line 264, in _tcp_listener
+    sock.bind(address)
+  File "D:\my-assistant12\Assistent_env\lib\site-packages\gevent\_socketcommon.py", line 547, in bind
+    return self._sock.bind(address)
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted: ('localhost', 8000)

@@ -53,7 +53,7 @@ $(document).ready(function () {
             $("#SiriWave").attr("hidden", false);
 
             try {
-                eel.allCommands(message);  // Pass message to Python
+                eel.allCommands(message);  // ✅ Fix: processUserMessage -> allCommands
             } catch (error) {
                 console.error("Error calling allCommands():", error);
             }
@@ -82,21 +82,38 @@ $(document).ready(function () {
     });
 
     // 📤 Send button clicked
-   $("#SendBtn").click(function () {
-    const msg = $("#chatbox").val();
-    if (msg.trim() !== "") {
-        eel.processUserMessage(msg);  // <-- Send to Python
-        $("#chatbox").val(""); // Clear after sending
-    }
-});
-
+    $("#SendBtn").click(function () {
+        const msg = $("#chatbox").val();
+        if (msg.trim() !== "") {
+            PlayAssistant(msg);  // ✅ send to Python
+        }
+    });
 
     // ⏎ Enter key pressed
-  $("#chatbox").keypress(function (e) {
-    if (e.which === 13) {
-        $("#SendBtn").click();
+    $("#chatbox").keypress(function (e) {
+        if (e.which === 13) {
+            $("#SendBtn").click();
+        }
+    });
+
+    // =============================
+    // 🟢 Functions exposed by Python
+    // =============================
+
+    // User message show in frontend
+    eel.expose(senderText);
+    function senderText(message) {
+        console.log("User:", message);
+        let chatBox = document.getElementById("chat-area");
+        chatBox.innerHTML += `<div class="user-msg">${message}</div>`;
     }
-    
-});
+
+    // AI response show in frontend
+    eel.expose(receiverText);
+    function receiverText(message) {
+        console.log("AI:", message);
+        let chatBox = document.getElementById("chat-area");
+        chatBox.innerHTML += `<div class="ai-msg">${message}</div>`;
+    }
 
 });
