@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J.A.R.V.I.S. Interface</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap">
+    <title>AI Assistant - Multi-Agent System</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <style>
         * {
@@ -12,498 +12,647 @@
             padding: 0;
             box-sizing: border-box;
         }
+        
         body {
-            font-family: 'Orbitron', monospace;
-            background: #0a0a0a;
-            color: #00ffff;
-            overflow: hidden;
-            height: 100vh;
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #ffffff;
+            overflow-x: hidden;
+            min-height: 100vh;
         }
-        .jarvis-container {
+        
+        .main-container {
             position: relative;
-            width: 100vw;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            flex-direction: column;
         }
-        .grid-background {
-            position: absolute;
+        
+        /* Animated Background */
+        .bg-animation {
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: linear-gradient(rgba(0, 255, 255, 0.1) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(0, 255, 255, 0.1) 1px, transparent 1px);
-            background-size: 50px 50px;
-            animation: gridMove 20s linear infinite;
+            z-index: -1;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(120, 219, 255, 0.3) 0%, transparent 50%);
+            animation: bgShift 20s ease-in-out infinite;
         }
+        
+        @keyframes bgShift {
+            0%, 100% { transform: translateX(0) translateY(0); }
+            25% { transform: translateX(-20px) translateY(-10px); }
+            50% { transform: translateX(20px) translateY(10px); }
+            75% { transform: translateX(-10px) translateY(20px); }
+        }
+        
+        .grid-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: gridMove 30s linear infinite;
+        }
+        
         @keyframes gridMove {
             0% { transform: translate(0, 0); }
             100% { transform: translate(50px, 50px); }
         }
-        .main-interface {
-            position: relative;
-            width: 100%;
-            height: 100%;
+        
+        /* Header */
+        .header {
+            padding: 20px 40px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
+            font-size: 24px;
+            color: white;
+            box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
         }
-        .central-holo {
-            position: relative;
-            width: 400px;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            animation: rotate 12s linear infinite;
-        }
-        @keyframes rotate {
-            from { transform: rotateY(0deg); }
-            to { transform: rotateY(360deg); }
-        }
-        .inner-holo {
-            width: 250px;
-            height: 250px;
-            border: 2px solid #00ffff;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: radial-gradient(circle, rgba(0, 255, 255, 0.1) 0%, transparent 70%);
-            box-shadow: 0 0 25px #00ffff, inset 0 0 25px rgba(0, 255, 255, 0.3);
-            animation: pulse 3s ease-in-out infinite;
-        }
-        @keyframes pulse {
-            0%, 100% { box-shadow: 0 0 25px #00ffff, inset 0 0 25px rgba(0, 255, 255, 0.3); }
-            50% { box-shadow: 0 0 50px #00ffff, inset 0 0 50px rgba(0, 255, 255, 0.5); }
-        }
-        .core {
-            text-align: center;
-        }
-        .jarvis-title {
-            font-size: 2.5rem;
-            font-weight: 900;
-            letter-spacing: 8px;
-            margin-bottom: 10px;
-            text-shadow: 0 0 20px #00ffff;
-            animation: titleGlow 2s ease-in-out infinite alternate;
-        }
-        @keyframes titleGlow {
-            from { text-shadow: 0 0 20px #00ffff; }
-            to { text-shadow: 0 0 40px #00ffff; }
-        }
-        .subtitle {
-            font-size: 0.9rem;
-            opacity: 0.8;
-            letter-spacing: 2px;
-        }
-        .data-stream {
-            position: absolute;
-            width: 2px;
-            height: 100%;
-            background: linear-gradient(to bottom, transparent, #00aaff, transparent);
-            animation: scan 2.5s infinite;
-        }
-        @keyframes scan {
-            0% { transform: translateY(-100%); }
-            100% { transform: translateY(100%); }
-        }
-        .side-panel {
-            position: absolute;
-            width: 300px;
-            height: 500px;
-            background: rgba(0, 20, 20, 0.8);
-            border: 1px solid rgba(0, 255, 255, 0.3);
-            backdrop-filter: blur(10px);
-            padding: 20px;
-            box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
-        }
-        .left-panel { left: 50px; top: 50%; transform: translateY(-50%); }
-        .right-panel { right: 50px; top: 50%; transform: translateY(-50%); }
-        .panel-item { margin-bottom: 30px; }
-        .panel-title {
-            font-size: 0.9rem;
+        
+        .logo-text {
+            font-family: 'Orbitron', monospace;
+            font-size: 24px;
             font-weight: 700;
-            margin-bottom: 10px;
-            color: #00ffff;
-            border-bottom: 1px solid rgba(0, 255, 255, 0.3);
-            padding-bottom: 5px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
-        .status-bar {
-            width: 100%;
-            height: 8px;
-            background: rgba(0, 255, 255, 0.2);
-            border-radius: 4px;
-            overflow: hidden;
-            margin-bottom: 5px;
+        
+        .status-indicators {
+            display: flex;
+            gap: 20px;
+            align-items: center;
         }
-        .status-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #00ffff, #0080ff);
-            border-radius: 4px;
-            animation: statusPulse 2s ease-in-out infinite;
+        
+        .status-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
-        @keyframes statusPulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
-        }
-        .status-text { font-size: 0.8rem; text-align: center; }
-        .power-grid { display: flex; gap: 10px; }
-        .power-cell {
-            width: 40px;
-            height: 20px;
-            border: 1px solid rgba(0, 255, 255, 0.3);
-            background: rgba(0, 255, 255, 0.1);
-        }
-        .power-cell.active {
-            background: linear-gradient(90deg, #00ffff, #0080ff);
-            box-shadow: 0 0 10px #00ffff;
-            animation: powerPulse 1.5s ease-in-out infinite;
-        }
-        @keyframes powerPulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.6; }
-        }
-        .diagnostic-line { display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.8rem; }
-        .value { color: #00ff00; }
-        .security-status { display: flex; align-items: center; gap: 10px; }
-        .security-indicator {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: #ff0000;
-        }
-        .security-indicator.active {
-            background: #00ff00;
-            box-shadow: 0 0 10px #00ff00;
-            animation: securityBlink 2s ease-in-out infinite;
-        }
-        @keyframes securityBlink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-        .connection-list { display: flex; flex-direction: column; gap: 8px; }
-        .connection-item { display: flex; align-items: center; gap: 10px; font-size: 0.8rem; }
-        .connection-dot {
+        
+        .status-dot {
             width: 8px;
             height: 8px;
             border-radius: 50%;
-            background: #00ff00;
-            box-shadow: 0 0 5px #00ff00;
-            animation: connectionPulse 3s ease-in-out infinite;
+            background: #00ff88;
+            animation: pulse 2s infinite;
         }
-        @keyframes connectionPulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.3; }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
         }
-        .time-display {
-            font-size: 1.5rem;
-            font-weight: 700;
-            text-align: center;
-            color: #00ffff;
-            text-shadow: 0 0 10px #00ffff;
-        }
-        .bottom-hud {
-            position: absolute;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
+        
+        /* Main Content */
+        .main-content {
+            flex: 1;
             display: flex;
-            gap: 50px;
+            padding: 40px;
+            gap: 40px;
         }
-        .hud-item { text-align: center; }
-        .hud-label { font-size: 0.7rem; opacity: 0.7; margin-bottom: 5px; }
-        .hud-value { font-size: 1rem; font-weight: 700; color: #00ffff; text-shadow: 0 0 10px #00ffff; }
-        .input-container {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
+        
+        .chat-section {
+            flex: 1;
             display: flex;
-            width: 60%;
-            gap: 10px;
+            flex-direction: column;
+            max-width: 800px;
         }
-        .input-field {
-            flex-grow: 1;
-            padding: 10px;
-            border: 2px solid #00ffff;
-            border-radius: 20px;
+        
+        .chat-container {
+            flex: 1;
             background: rgba(255, 255, 255, 0.05);
-            color: #00ffff;
-            font-family: 'Orbitron', monospace;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            padding: 30px;
+            margin-bottom: 20px;
+            overflow-y: auto;
+            max-height: 600px;
         }
+        
+        .welcome-message {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            border-radius: 15px;
+            border: 1px solid rgba(102, 126, 234, 0.3);
+            margin-bottom: 20px;
+        }
+        
+        .welcome-title {
+            font-family: 'Orbitron', monospace;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .welcome-subtitle {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 20px;
+        }
+        
+        .capabilities {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        
+        .capability-tag {
+            padding: 6px 12px;
+            background: rgba(102, 126, 234, 0.2);
+            border: 1px solid rgba(102, 126, 234, 0.3);
+            border-radius: 20px;
+            font-size: 12px;
+            color: #667eea;
+        }
+        
+        .chat-messages {
+            min-height: 200px;
+        }
+        
+        .message {
+            margin-bottom: 20px;
+            padding: 15px 20px;
+            border-radius: 15px;
+            max-width: 80%;
+            word-wrap: break-word;
+        }
+        
+        .message.user {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin-left: auto;
+            text-align: right;
+        }
+        
+        .message.assistant {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+        }
+        
+        .message.assistant .agent-tag {
+            display: inline-block;
+            background: rgba(102, 126, 234, 0.3);
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 10px;
+            margin-bottom: 5px;
+            color: #667eea;
+        }
+        
+        /* Input Section */
+        .input-section {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        
+        .input-container {
+            flex: 1;
+            position: relative;
+        }
+        
+        .input-field {
+            width: 100%;
+            padding: 15px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            color: white;
+            font-size: 16px;
+            backdrop-filter: blur(20px);
+            transition: all 0.3s ease;
+        }
+        
         .input-field:focus {
             outline: none;
-            box-shadow: 0 0 15px #00ffff;
+            border-color: #667eea;
+            box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
         }
-        .glow-on-hover {
-            background: #00bfff;
+        
+        .input-field::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn {
+            width: 50px;
+            height: 50px;
             border: none;
             border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-            transition: all 0.3s ease;
             display: flex;
             align-items: center;
             justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 18px;
         }
-        .glow-on-hover:hover {
-            box-shadow: 0 0 20px #00bfff;
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
             transform: scale(1.1);
         }
-        .chat-panel {
-            position: absolute;
-            bottom: 80px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 400px;
-            height: 300px;
-            background: rgba(0, 20, 20, 0.8);
-            border: 1px solid rgba(0, 255, 255, 0.3);
+        
+        /* Sidebar */
+        .sidebar {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .widget {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            padding: 20px;
+        }
+        
+        .widget-title {
+            font-family: 'Orbitron', monospace;
+            font-size: 14px;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .system-stats {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .stat-value {
+            font-size: 14px;
+            font-weight: 600;
+            color: #00ff88;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 3px;
+            overflow: hidden;
+            margin-top: 5px;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            border-radius: 3px;
+            transition: width 0.3s ease;
+        }
+        
+        .quick-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .quick-action {
+            padding: 12px 16px;
+            background: rgba(102, 126, 234, 0.1);
+            border: 1px solid rgba(102, 126, 234, 0.3);
             border-radius: 10px;
-            padding: 10px;
-            overflow-y: auto;
-            box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
-            display: none;
+            color: #667eea;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 14px;
         }
-        .chat-message {
-            margin: 5px 0;
-            padding: 8px;
-            border-radius: 5px;
-            max-width: 80%;
+        
+        .quick-action:hover {
+            background: rgba(102, 126, 234, 0.2);
+            transform: translateX(5px);
         }
-        .user-message { background: #00bfff; color: #000; }
-        .jarvis-message { background: rgba(0, 255, 255, 0.2); color: #fff; }
+        
+        /* Responsive Design */
         @media (max-width: 768px) {
-            .central-holo { width: 300px; height: 300px; }
-            .inner-holo { width: 200px; height: 200px; }
-            .jarvis-title { font-size: 1.8rem; letter-spacing: 4px; }
-            .side-panel { width: 250px; height: 400px; padding: 15px; }
-            .left-panel { left: 20px; }
-            .right-panel { right: 20px; }
-            .input-container { width: 80%; }
-            .chat-panel { width: 300px; }
+            .main-content {
+                flex-direction: column;
+                padding: 20px;
+                gap: 20px;
+            }
+            
+            .sidebar {
+                width: 100%;
+                order: -1;
+            }
+            
+            .header {
+                padding: 15px 20px;
+            }
+            
+            .logo-text {
+                font-size: 18px;
+            }
+            
+            .welcome-title {
+                font-size: 24px;
+            }
+        }
+        
+        /* Animations */
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .typing-indicator {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: rgba(255, 255, 255, 0.7);
+            font-style: italic;
+        }
+        
+        .typing-dot {
+            width: 6px;
+            height: 6px;
+            background: #667eea;
+            border-radius: 50%;
+            animation: typing 1.4s infinite;
+        }
+        
+        .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+        .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+        
+        @keyframes typing {
+            0%, 60%, 100% { transform: translateY(0); }
+            30% { transform: translateY(-10px); }
         }
     </style>
 </head>
 <body>
-    <div class="jarvis-container">
-        <div class="grid-background"></div>
-        <div class="main-interface">
-            <div class="central-holo">
-                <div class="inner-holo relative">
-                    <div class="core">
-                        <h1 class="jarvis-title">J.A.R.V.I.S.</h1>
-                        <p class="subtitle">ACTIVE: <span id="activeTime">01:52 AM</span>, 01-AUG-2025</p>
-                        <p class="subtitle mt-2">STATUS: <span id="statusPercent">95%</span></p>
-                    </div>
-                    <div class="data-stream" style="left: 20%;"></div>
-                    <div class="data-stream" style="left: 80%; animation-delay: 1s;"></div>
+    <div class="bg-animation"></div>
+    <div class="grid-overlay"></div>
+    
+    <div class="main-container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="bi bi-robot"></i>
+                </div>
+                <div class="logo-text">AI Assistant</div>
+            </div>
+            <div class="status-indicators">
+                <div class="status-item">
+                    <div class="status-dot"></div>
+                    <span>Online</span>
+                </div>
+                <div class="status-item">
+                    <div class="status-dot" style="background: #00ff88;"></div>
+                    <span>Multi-Agent</span>
                 </div>
             </div>
-            <div class="side-panel left-panel">
-                <div class="panel-item">
-                    <div class="panel-title">SYSTEM STATUS</div>
-                    <div class="status-bar">
-                        <div class="status-fill" id="statusFill" style="width: 95%;"></div>
-                    </div>
-                    <div class="status-text" id="statusText">95% OPERATIONAL</div>
-                </div>
-                <div class="panel-item">
-                    <div class="panel-title">POWER LEVELS</div>
-                    <div class="power-grid">
-                        <div class="power-cell active"></div>
-                        <div class="power-cell active"></div>
-                        <div class="power-cell active"></div>
-                        <div class="power-cell active"></div>
-                        <div class="power-cell"></div>
-                    </div>
-                </div>
-                <div class="panel-item">
-                    <div class="panel-title">DIAGNOSTICS</div>
-                    <div class="diagnostic-line">
-                        <span>CPU:</span>
-                        <span class="value" id="cpuValue">78%</span>
-                    </div>
-                    <div class="diagnostic-line">
-                        <span>MEMORY:</span>
-                        <span class="value">64%</span>
-                    </div>
-                    <div class="diagnostic-line">
-                        <span>NETWORK:</span>
-                        <span class="value">100%</span>
-                    </div>
-                </div>
-            </div>
-            <div class="side-panel right-panel">
-                <div class="panel-item">
-                    <div class="panel-title">SECURITY</div>
-                    <div class="security-status">
-                        <div class="security-indicator active"></div>
-                        <span>SECURE</span>
-                    </div>
-                </div>
-                <div class="panel-item">
-                    <div class="panel-title">CONNECTIONS</div>
-                    <div class="connection-list">
-                        <div class="connection-item">
-                            <div class="connection-dot"></div>
-                            <span>STARK INDUSTRIES</span>
-                        </div>
-                        <div class="connection-item">
-                            <div class="connection-dot"></div>
-                            <span>AVENGERS HQ</span>
-                        </div>
-                        <div class="connection-item">
-                            <div class="connection-dot"></div>
-                            <span>WORKSHOP</span>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Chat Section -->
+            <div class="chat-section">
+                <div class="chat-container">
+                    <div class="welcome-message">
+                        <h1 class="welcome-title">Welcome to AI Assistant</h1>
+                        <p class="welcome-subtitle">Your Multi-Agent AI System is ready to help</p>
+                        <div class="capabilities">
+                            <span class="capability-tag">Task Management</span>
+                            <span class="capability-tag">App Control</span>
+                            <span class="capability-tag">Voice Commands</span>
+                            <span class="capability-tag">Formal Communication</span>
+                            <span class="capability-tag">Web Browsing</span>
                         </div>
                     </div>
+                    <div class="chat-messages" id="chatMessages">
+                        <!-- Messages will appear here -->
+                    </div>
                 </div>
-                <div class="panel-item">
-                    <div class="panel-title">TIME</div>
-                    <div class="time-display" id="timeDisplay">01:52 AM</div>
+                
+                <!-- Input Section -->
+                <div class="input-section">
+                    <div class="input-container">
+                        <input type="text" class="input-field" id="chatbox" placeholder="Ask me anything...">
+                    </div>
+                    <div class="action-buttons">
+                        <button class="btn btn-primary" id="SendBtn">
+                            <i class="bi bi-send"></i>
+                        </button>
+                        <button class="btn btn-secondary" id="mic-btn">
+                            <i class="bi bi-mic-fill"></i>
+                        </button>
+                        <button class="btn btn-secondary" id="chat-btn">
+                            <i class="bi bi-chat-dots"></i>
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <div class="bottom-hud">
-                <div class="hud-item">
-                    <div class="hud-label">PROTOCOL</div>
-                    <div class="hud-value">MARK-52</div>
-                </div>
-                <div class="hud-item">
-                    <div class="hud-label">STATUS</div>
-                    <div class="hud-value">ONLINE</div>
-                </div>
-                <div class="hud-item">
-                    <div class="hud-label">VERSION</div>
-                    <div class="hud-value">3.14.159</div>
-                </div>
-            </div>
-            <!-- Chat Panel -->
-            <div class="chat-panel" id="chatPanel">
-                <div id="chatMessages"></div>
             </div>
             
-            <div id="chat-area" class="chat-container"></div>
-
-            <!-- Input Container (from your code) -->
-            <div class="input-container">
-                <input class="input-field" type="text" id="chatbox" placeholder="Message Jarvis...">
-                <button id="SendBtn" class="glow-on-hover"><i class="bi bi-send"></i></button>
-                <button id="mic-btn" class="glow-on-hover"><i class="bi bi-mic-fill"></i></button>
-                <button id="chat-btn" class="glow-on-hover" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
-                    <i class="bi bi-chat-dots"></i>
-                </button>
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="widget">
+                    <div class="widget-title">System Status</div>
+                    <div class="system-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">CPU Usage</span>
+                            <span class="stat-value" id="cpuValue">45%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="cpuProgress" style="width: 45%;"></div>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Memory</span>
+                            <span class="stat-value" id="memoryValue">62%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="memoryProgress" style="width: 62%;"></div>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Network</span>
+                            <span class="stat-value" id="networkValue">98%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="networkProgress" style="width: 98%;"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="widget">
+                    <div class="widget-title">Quick Actions</div>
+                    <div class="quick-actions">
+                        <div class="quick-action" onclick="sendQuickMessage('open notepad')">
+                            <i class="bi bi-file-text"></i> Open Notepad
+                        </div>
+                        <div class="quick-action" onclick="sendQuickMessage('open linkedin')">
+                            <i class="bi bi-linkedin"></i> Open LinkedIn
+                        </div>
+                        <div class="quick-action" onclick="sendQuickMessage('open youtube')">
+                            <i class="bi bi-youtube"></i> Open YouTube
+                        </div>
+                        <div class="quick-action" onclick="sendQuickMessage('what time is it')">
+                            <i class="bi bi-clock"></i> Check Time
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="widget">
+                    <div class="widget-title">Active Agents</div>
+                    <div class="system-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">App Agent</span>
+                            <span class="stat-value">Ready</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Voice Agent</span>
+                            <span class="stat-value">Ready</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Task Agent</span>
+                            <span class="stat-value">Ready</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Formal Agent</span>
+                            <span class="stat-value">Ready</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Chat History (from your code) -->
-    <div class="offcanvas offcanvas-start chat-canvas" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title text-white" id="offcanvasScrollingLabel">Chats</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div id="chat-canvas-body" class="offcanvas-body">
-            <!-- Chatting code here -->
-        </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/eel.js"></script>
+    <script src="main.js"></script>
+    
     <script>
-        // Update time display
-        function updateTime() {
-            const now = new Date();
-            document.getElementById("timeDisplay").textContent = now.toLocaleTimeString("en-US", {
-                hour12: true,
-                hour: "2-digit",
-                minute: "2-digit"
-            });
-            document.getElementById("activeTime").textContent = now.toLocaleTimeString("en-US", {
-                hour12: true,
-                hour: "2-digit",
-                minute: "2-digit"
-            });
+        // System status updates
+        function updateSystemStats() {
+            const cpu = Math.floor(Math.random() * 30) + 30;
+            const memory = Math.floor(Math.random() * 20) + 50;
+            const network = Math.floor(Math.random() * 10) + 90;
+            
+            document.getElementById('cpuValue').textContent = cpu + '%';
+            document.getElementById('cpuProgress').style.width = cpu + '%';
+            document.getElementById('memoryValue').textContent = memory + '%';
+            document.getElementById('memoryProgress').style.width = memory + '%';
+            document.getElementById('networkValue').textContent = network + '%';
+            document.getElementById('networkProgress').style.width = network + '%';
         }
-
-        // Update system status and metrics
-        function updateStatus() {
-            const status = Math.floor(Math.random() * 5) + 95;
-            document.getElementById("statusPercent").textContent = `${status}%`;
-            document.getElementById("statusText").textContent = `${status}% OPERATIONAL`;
-            document.getElementById("statusFill").style.width = `${status}%`;
-            document.getElementById("cpuValue").textContent = `${Math.floor(Math.random() * 20) + 70}%`;
+        
+        // Quick action function
+        function sendQuickMessage(message) {
+            document.getElementById('chatbox').value = message;
+            document.getElementById('SendBtn').click();
         }
-
-        // Chat functionality
-        function addMessage(isUser, message) {
-            const chatMessages = document.getElementById("chatMessages");
-            const chatCanvasBody = document.getElementById("chat-canvas-body");
-            const messageDiv = document.createElement("div");
-            messageDiv.className = `chat-message ${isUser ? "user-message" : "jarvis-message"}`;
-            messageDiv.textContent = message;
-            chatMessages.appendChild(messageDiv);
-            chatCanvasBody.appendChild(messageDiv.cloneNode(true));
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-            chatCanvasBody.scrollTop = chatCanvasBody.scrollHeight;
-        }
-
-        // Handle input and mic
-        document.getElementById("chatbox").addEventListener("keypress", function(e) {
-            if (e.key === "Enter") {
-                const message = this.value.trim();
-                if (message) {
-                    addMessage(true, message);
-                    this.value = "";
-                    setTimeout(() => addMessage(false, "Processing command: " + message), 1000);
-                }
+        
+        // Initialize
+        updateSystemStats();
+        setInterval(updateSystemStats, 5000);
+        
+        // Add fade-in animation to messages
+        function addMessage(content, isUser = false, agentName = null) {
+            const messagesContainer = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${isUser ? 'user' : 'assistant'} fade-in`;
+            
+            if (agentName && !isUser) {
+                messageDiv.innerHTML = `<div class="agent-tag">${agentName}</div>${content}`;
+            } else {
+                messageDiv.textContent = content;
             }
-        });
-
-        document.getElementById("SendBtn").addEventListener("click", function() {
-            const message = document.getElementById("chatbox").value.trim();
-            if (message) {
-                addMessage(true, message);
-                document.getElementById("chatbox").value = "";
-                setTimeout(() => addMessage(false, "Processing command: " + message), 1000);
-            }
-        });
-
-        document.getElementById("mic-btn").addEventListener("click", function() {
-            addMessage(false, "Voice command detected. Please speak...");
-            setTimeout(() => addMessage(false, "Command received: Activate suit"), 1500);
-        });
-
-        // Initialize and set intervals
-        updateTime();
-        updateStatus();
-        setInterval(updateTime, 1000);
-        setInterval(updateStatus, 5000);
-
-        // Add interactive effects
-        document.addEventListener("DOMContentLoaded", () => {
-            const centralHolo = document.querySelector(".central-holo");
-            centralHolo.addEventListener("click", function() {
-                this.style.transform = "scale(1.05) rotateY(0deg)";
-                setTimeout(() => {
-                    this.style.transform = "scale(1) rotateY(0deg)";
-                }, 200);
-            });
-
-            const panels = document.querySelectorAll(".side-panel");
-            panels.forEach((panel) => {
-                panel.addEventListener("mouseenter", function() {
-                    this.style.boxShadow = "0 0 30px rgba(0, 255, 255, 0.4)";
-                });
-                panel.addEventListener("mouseleave", function() {
-                    this.style.boxShadow = "0 0 20px rgba(0, 255, 255, 0.2)";
-                });
-            });
-        });
+            
+            messagesContainer.appendChild(messageDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+        
+        // Override the existing DisplayMessage function
+        window.DisplayMessage = function(message, isUser = false, agentName = null) {
+            addMessage(message, isUser, agentName);
+        };
     </script>
 </body>
 </html>

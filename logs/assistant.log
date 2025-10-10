@@ -1,138 +1,1436 @@
-2025-08-21 00:56:18,881 INFO: ChatbotManager using OllamaService
-2025-08-21 00:56:21,347 INFO: ChatbotManager using OllamaService
-2025-08-21 00:56:21,354 INFO: ChatbotManager using OllamaService
-2025-08-21 01:11:24,623 INFO: ChatbotManager using OllamaService
-2025-08-21 01:11:27,025 INFO: ChatbotManager using OllamaService
-2025-08-21 01:11:27,027 INFO: ChatbotManager using OllamaService
-2025-08-21 01:31:42,413 INFO: ChatbotManager using OllamaService
-2025-08-21 01:31:44,811 INFO: ChatbotManager using OllamaService
-2025-08-21 01:31:44,811 INFO: ChatbotManager using OllamaService
-2025-08-21 01:32:06,336 ERROR: OllamaService error
+2025-10-11 00:01:37,572 INFO: ChatbotManager using OllamaService
+2025-10-11 00:01:39,888 INFO: Calibrating microphone for ambient noise...
+2025-10-11 00:01:40,891 INFO: Microphone calibration complete
+2025-10-11 00:01:40,916 INFO: Multi-agent orchestrator initialized successfully
+2025-10-11 00:01:41,157 ERROR: start() error
 Traceback (most recent call last):
-  File "D:\my-assistant12\engine\services\ollama_service.py", line 16, in get_response
-    resp.raise_for_status()
-  File "D:\My-Assistant12\Assistent_env\lib\site-packages\requests\models.py", line 1026, in raise_for_status
-    raise HTTPError(http_error_msg, response=self)
-requests.exceptions.HTTPError: 404 Client Error: Not Found for url: http://localhost:11434/api/generate
-2025-08-21 01:32:19,601 ERROR: OllamaService error
-Traceback (most recent call last):
-  File "D:\my-assistant12\engine\services\ollama_service.py", line 16, in get_response
-    resp.raise_for_status()
-  File "D:\My-Assistant12\Assistent_env\lib\site-packages\requests\models.py", line 1026, in raise_for_status
-    raise HTTPError(http_error_msg, response=self)
-requests.exceptions.HTTPError: 404 Client Error: Not Found for url: http://localhost:11434/api/generate
-2025-08-21 01:32:28,827 ERROR: OllamaService error
-Traceback (most recent call last):
-  File "D:\my-assistant12\engine\services\ollama_service.py", line 16, in get_response
-    resp.raise_for_status()
-  File "D:\My-Assistant12\Assistent_env\lib\site-packages\requests\models.py", line 1026, in raise_for_status
-    raise HTTPError(http_error_msg, response=self)
-requests.exceptions.HTTPError: 404 Client Error: Not Found for url: http://localhost:11434/api/generate
-2025-08-21 01:32:54,020 ERROR: openCommand error
-Traceback (most recent call last):
-  File "D:\my-assistant12\engine\command.py", line 101, in openCommand
-    os.startfile(path)
-FileNotFoundError: [WinError 2] The system cannot find the file specified: 'C:\\Windows\notepad.exe'
-2025-08-21 01:32:58,566 ERROR: OllamaService error
-Traceback (most recent call last):
-  File "D:\my-assistant12\engine\services\ollama_service.py", line 16, in get_response
-    resp.raise_for_status()
-  File "D:\My-Assistant12\Assistent_env\lib\site-packages\requests\models.py", line 1026, in raise_for_status
-    raise HTTPError(http_error_msg, response=self)
-requests.exceptions.HTTPError: 404 Client Error: Not Found for url: http://localhost:11434/api/generate
-2025-08-21 01:46:23,877 INFO: ChatbotManager using OllamaService
-2025-08-21 01:46:26,725 INFO: ChatbotManager using OllamaService
-2025-08-21 01:46:26,725 INFO: ChatbotManager using OllamaService
-2025-08-21 02:01:53,443 INFO: ChatbotManager using OllamaService
-2025-08-21 02:01:55,918 INFO: ChatbotManager using OllamaService
-2025-08-21 02:01:55,918 INFO: ChatbotManager using OllamaService
-2025-08-21 02:03:43,931 INFO: ChatbotManager using OllamaService
-2025-08-21 02:03:46,642 INFO: ChatbotManager using OllamaService
-2025-08-21 02:03:46,642 INFO: ChatbotManager using OllamaService
-2025-08-21 02:05:24,490 INFO: ChatbotManager using OllamaService
-2025-08-21 02:05:26,931 INFO: ChatbotManager using OllamaService
-2025-08-21 02:05:26,933 INFO: ChatbotManager using OllamaService
-2025-08-21 02:06:02,398 INFO: ChatbotManager using OllamaService
-2025-08-21 02:06:04,774 INFO: ChatbotManager using OllamaService
-2025-08-21 02:06:04,776 INFO: ChatbotManager using OllamaService
-2025-08-21 02:06:53,668 INFO: ChatbotManager using OllamaService
-2025-08-21 02:06:56,284 INFO: ChatbotManager using OllamaService
-2025-08-21 02:06:56,299 INFO: ChatbotManager using OllamaService
-2025-08-21 02:09:35,748 INFO: ChatbotManager using OllamaService
-2025-08-21 02:09:38,344 INFO: ChatbotManager using OllamaService
-2025-08-21 02:09:38,352 INFO: ChatbotManager using OllamaService
-2025-08-21 02:10:53,894 INFO: ChatbotManager using OllamaService
-2025-08-21 02:10:56,456 INFO: ChatbotManager using OllamaService
-2025-08-21 02:10:56,469 INFO: ChatbotManager using OllamaService
-2025-08-21 02:17:22,798 INFO: ChatbotManager using OllamaService
-2025-08-21 02:17:24,994 INFO: ChatbotManager using OllamaService
-2025-08-21 02:17:24,994 INFO: ChatbotManager using OllamaService
-2025-08-21 02:18:24,867 INFO: ChatbotManager using OllamaService
-2025-08-21 02:18:27,254 INFO: ChatbotManager using OllamaService
-2025-08-21 02:18:27,275 INFO: ChatbotManager using OllamaService
-2025-08-21 10:25:01,653 INFO: ChatbotManager using OllamaService
-2025-08-21 10:25:04,252 INFO: ChatbotManager using OllamaService
-2025-08-21 10:25:04,252 INFO: ChatbotManager using OllamaService
-2025-08-21 10:26:35,165 INFO: ChatbotManager using OllamaService
-2025-08-21 10:26:37,434 INFO: ChatbotManager using OllamaService
-2025-08-21 10:26:37,439 INFO: ChatbotManager using OllamaService
-2025-08-21 11:03:57,030 INFO: ChatbotManager using OllamaService
-2025-08-21 11:04:00,611 INFO: ChatbotManager using OllamaService
-2025-08-21 11:04:00,625 INFO: ChatbotManager using OllamaService
-2025-08-22 12:09:25,798 INFO: ChatbotManager using OllamaService
-2025-08-22 12:09:28,699 INFO: ChatbotManager using OllamaService
-2025-08-22 12:09:28,714 INFO: ChatbotManager using OllamaService
-2025-08-23 00:47:44,040 INFO: ChatbotManager using OllamaService
-2025-08-23 00:47:46,746 INFO: ChatbotManager using OllamaService
-2025-08-23 00:47:46,750 INFO: ChatbotManager using OllamaService
-2025-08-23 00:57:44,886 INFO: ChatbotManager using OllamaService
-2025-08-23 00:57:47,461 INFO: ChatbotManager using OllamaService
-2025-08-23 00:57:47,464 INFO: ChatbotManager using OllamaService
-2025-08-23 01:07:37,504 INFO: ChatbotManager using OllamaService
-2025-08-23 01:07:39,826 INFO: ChatbotManager using OllamaService
-2025-08-23 01:07:39,826 INFO: ChatbotManager using OllamaService
-2025-08-23 01:08:32,032 INFO: ChatbotManager using OllamaService
-2025-08-23 01:08:35,310 INFO: ChatbotManager using OllamaService
-2025-08-23 01:08:35,338 INFO: ChatbotManager using OllamaService
-2025-08-23 01:15:46,484 INFO: ChatbotManager using OllamaService
-2025-08-23 01:15:48,355 INFO: ChatbotManager using OllamaService
-2025-08-23 01:15:48,360 INFO: ChatbotManager using OllamaService
-2025-08-23 10:54:35,289 INFO: ChatbotManager using OllamaService
-2025-08-23 10:54:40,848 INFO: ChatbotManager using OllamaService
-2025-08-23 10:54:40,855 INFO: ChatbotManager using OllamaService
-2025-08-23 12:45:27,805 INFO: ChatbotManager using OllamaService
-2025-08-23 12:45:30,403 INFO: ChatbotManager using OllamaService
-2025-08-23 12:45:30,404 INFO: ChatbotManager using OllamaService
-2025-08-23 12:49:22,125 INFO: ChatbotManager using OllamaService
-2025-08-23 12:49:24,833 INFO: ChatbotManager using OllamaService
-2025-08-23 12:49:24,833 INFO: ChatbotManager using OllamaService
-2025-08-30 12:32:32,262 INFO: ChatbotManager using OllamaService
-2025-08-30 12:32:37,067 INFO: ChatbotManager using OllamaService
-2025-08-30 12:32:37,067 INFO: ChatbotManager using OllamaService
-2025-08-30 12:32:39,469 ERROR: start() error
-Traceback (most recent call last):
-  File "D:\my-assistant12\main.py", line 94, in start
+  File "D:\My-Assistant12\main.py", line 63, in start
     eel.start(INDEX_PAGE, mode=None, block=True)
-  File "D:\my-assistant12\Assistent_env\lib\site-packages\eel\__init__.py", line 200, in start
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\eel\__init__.py", line 349, in start
     run_lambda()
-  File "D:\my-assistant12\Assistent_env\lib\site-packages\eel\__init__.py", line 191, in run_lambda
+    ~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\eel\__init__.py", line 340, in run_lambda
     btl.run(
-  File "D:\my-assistant12\Assistent_env\lib\site-packages\bottle.py", line 3175, in run
+    ~~~~~~~^
+        host=HOST,
+        ^^^^^^^^^^
+    ...<2 lines>...
+        quiet=True,
+        ^^^^^^^^^^^
+        app=app)  # Always returns None
+        ^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\bottle.py", line 3985, in run
     server.run(app)
-  File "D:\my-assistant12\Assistent_env\lib\site-packages\bottle_websocket\server.py", line 17, in run
+    ~~~~~~~~~~^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\bottle_websocket\server.py", line 17, in run
     server.serve_forever()
-  File "D:\my-assistant12\Assistent_env\lib\site-packages\gevent\baseserver.py", line 398, in serve_forever
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\baseserver.py", line 401, in serve_forever
     self.start()
-  File "D:\my-assistant12\Assistent_env\lib\site-packages\gevent\baseserver.py", line 336, in start
+    ~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\baseserver.py", line 339, in start
     self.init_socket()
-  File "D:\my-assistant12\Assistent_env\lib\site-packages\gevent\pywsgi.py", line 1668, in init_socket
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\pywsgi.py", line 1672, in init_socket
     StreamServer.init_socket(self)
-  File "D:\my-assistant12\Assistent_env\lib\site-packages\gevent\server.py", line 173, in init_socket
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\server.py", line 173, in init_socket
     self.socket = self.get_listener(self.address, self.backlog, self.family)
-  File "D:\my-assistant12\Assistent_env\lib\site-packages\gevent\server.py", line 185, in get_listener
+                  ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\server.py", line 185, in get_listener
     return _tcp_listener(address, backlog=backlog, reuse_addr=cls.reuse_addr, family=family)
-  File "D:\my-assistant12\Assistent_env\lib\site-packages\gevent\server.py", line 264, in _tcp_listener
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\server.py", line 264, in _tcp_listener
     sock.bind(address)
-  File "D:\my-assistant12\Assistent_env\lib\site-packages\gevent\_socketcommon.py", line 547, in bind
+    ~~~~~~~~~^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\_socketcommon.py", line 543, in bind
     return self._sock.bind(address)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
 OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted: ('localhost', 8000)
+2025-10-11 00:02:32,941 INFO: ChatbotManager using OllamaService
+2025-10-11 00:02:36,279 INFO: Calibrating microphone for ambient noise...
+2025-10-11 00:02:37,285 INFO: Microphone calibration complete
+2025-10-11 00:02:37,322 INFO: Multi-agent orchestrator initialized successfully
+2025-10-11 00:07:21,526 INFO: ChatbotManager using OllamaService
+2025-10-11 00:07:25,104 INFO: Calibrating microphone for ambient noise...
+2025-10-11 00:07:26,108 INFO: Microphone calibration complete
+2025-10-11 00:07:26,150 INFO: Multi-agent orchestrator initialized successfully
+2025-10-11 00:08:58,393 INFO: ChatbotManager using OllamaService
+2025-10-11 00:09:02,733 INFO: Calibrating microphone for ambient noise...
+2025-10-11 00:09:03,737 INFO: Microphone calibration complete
+2025-10-11 00:09:03,774 INFO: Multi-agent orchestrator initialized successfully
+2025-10-11 00:09:11,168 INFO: ChatbotManager using OllamaService
+2025-10-11 00:09:17,038 INFO: Calibrating microphone for ambient noise...
+2025-10-11 00:09:18,045 INFO: Microphone calibration complete
+2025-10-11 00:09:18,089 INFO: Multi-agent orchestrator initialized successfully
+2025-10-11 00:09:18,831 ERROR: start() error
+Traceback (most recent call last):
+  File "D:\My-Assistant12\main.py", line 63, in start
+    eel.start(INDEX_PAGE, mode=None, block=True)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\eel\__init__.py", line 349, in start
+    run_lambda()
+    ~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\eel\__init__.py", line 340, in run_lambda
+    btl.run(
+    ~~~~~~~^
+        host=HOST,
+        ^^^^^^^^^^
+    ...<2 lines>...
+        quiet=True,
+        ^^^^^^^^^^^
+        app=app)  # Always returns None
+        ^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\bottle.py", line 3985, in run
+    server.run(app)
+    ~~~~~~~~~~^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\bottle_websocket\server.py", line 17, in run
+    server.serve_forever()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\baseserver.py", line 401, in serve_forever
+    self.start()
+    ~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\baseserver.py", line 339, in start
+    self.init_socket()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\pywsgi.py", line 1672, in init_socket
+    StreamServer.init_socket(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\server.py", line 173, in init_socket
+    self.socket = self.get_listener(self.address, self.backlog, self.family)
+                  ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\server.py", line 185, in get_listener
+    return _tcp_listener(address, backlog=backlog, reuse_addr=cls.reuse_addr, family=family)
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\server.py", line 264, in _tcp_listener
+    sock.bind(address)
+    ~~~~~~~~~^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\_socketcommon.py", line 543, in bind
+    return self._sock.bind(address)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted: ('localhost', 8000)
+2025-10-11 00:09:39,846 INFO: ChatbotManager using OllamaService
+2025-10-11 00:09:43,787 INFO: Calibrating microphone for ambient noise...
+2025-10-11 00:09:44,791 INFO: Microphone calibration complete
+2025-10-11 00:09:44,818 INFO: Multi-agent orchestrator initialized successfully
+2025-10-11 00:26:54,901 INFO: ChatbotManager using OllamaService
+2025-10-11 00:26:59,203 INFO: Calibrating microphone for ambient noise...
+2025-10-11 00:27:00,210 INFO: Microphone calibration complete
+2025-10-11 00:27:00,253 INFO: Multi-agent orchestrator initialized successfully
+2025-10-11 00:27:00,499 ERROR: start() error
+Traceback (most recent call last):
+  File "D:\My-Assistant12\main.py", line 66, in start
+    eel.start(INDEX_PAGE, mode=None, block=True, port=8001)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\eel\__init__.py", line 349, in start
+    run_lambda()
+    ~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\eel\__init__.py", line 340, in run_lambda
+    btl.run(
+    ~~~~~~~^
+        host=HOST,
+        ^^^^^^^^^^
+    ...<2 lines>...
+        quiet=True,
+        ^^^^^^^^^^^
+        app=app)  # Always returns None
+        ^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\bottle.py", line 3985, in run
+    server.run(app)
+    ~~~~~~~~~~^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\bottle_websocket\server.py", line 17, in run
+    server.serve_forever()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\baseserver.py", line 401, in serve_forever
+    self.start()
+    ~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\baseserver.py", line 339, in start
+    self.init_socket()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\pywsgi.py", line 1672, in init_socket
+    StreamServer.init_socket(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\server.py", line 173, in init_socket
+    self.socket = self.get_listener(self.address, self.backlog, self.family)
+                  ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\server.py", line 185, in get_listener
+    return _tcp_listener(address, backlog=backlog, reuse_addr=cls.reuse_addr, family=family)
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\server.py", line 264, in _tcp_listener
+    sock.bind(address)
+    ~~~~~~~~~^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\_socketcommon.py", line 543, in bind
+    return self._sock.bind(address)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted: ('localhost', 8001)
+2025-10-11 00:31:04,546 INFO: ChatbotManager using OllamaService
+2025-10-11 00:31:08,604 INFO: Calibrating microphone for ambient noise...
+2025-10-11 00:31:09,610 INFO: Microphone calibration complete
+2025-10-11 00:31:09,648 INFO: Multi-agent orchestrator initialized successfully
+2025-10-11 00:32:23,014 INFO: ChatbotManager using OllamaService
+2025-10-11 00:32:27,121 INFO: Calibrating microphone for ambient noise...
+2025-10-11 00:32:28,126 INFO: Microphone calibration complete
+2025-10-11 00:32:28,171 INFO: Multi-agent orchestrator initialized successfully
+2025-10-11 00:32:41,763 INFO: ChatbotManager using OllamaService
+2025-10-11 00:32:45,085 INFO: Calibrating microphone for ambient noise...
+2025-10-11 00:32:46,089 INFO: Microphone calibration complete
+2025-10-11 00:32:46,117 INFO: Multi-agent orchestrator initialized successfully
+2025-10-11 00:32:46,341 ERROR: start() error
+Traceback (most recent call last):
+  File "D:\My-Assistant12\main.py", line 66, in start
+    eel.start(INDEX_PAGE, mode=None, block=True, port=8002)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\eel\__init__.py", line 349, in start
+    run_lambda()
+    ~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\eel\__init__.py", line 340, in run_lambda
+    btl.run(
+    ~~~~~~~^
+        host=HOST,
+        ^^^^^^^^^^
+    ...<2 lines>...
+        quiet=True,
+        ^^^^^^^^^^^
+        app=app)  # Always returns None
+        ^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\bottle.py", line 3985, in run
+    server.run(app)
+    ~~~~~~~~~~^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\bottle_websocket\server.py", line 17, in run
+    server.serve_forever()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\baseserver.py", line 401, in serve_forever
+    self.start()
+    ~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\baseserver.py", line 339, in start
+    self.init_socket()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\pywsgi.py", line 1672, in init_socket
+    StreamServer.init_socket(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\server.py", line 173, in init_socket
+    self.socket = self.get_listener(self.address, self.backlog, self.family)
+                  ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\server.py", line 185, in get_listener
+    return _tcp_listener(address, backlog=backlog, reuse_addr=cls.reuse_addr, family=family)
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\server.py", line 264, in _tcp_listener
+    sock.bind(address)
+    ~~~~~~~~~^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\_socketcommon.py", line 543, in bind
+    return self._sock.bind(address)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted: ('localhost', 8002)
+2025-10-11 00:33:48,760 INFO: ChatbotManager using OllamaService
+2025-10-11 00:33:52,411 INFO: Calibrating microphone for ambient noise...
+2025-10-11 00:33:53,414 INFO: Microphone calibration complete
+2025-10-11 00:33:53,445 INFO: Multi-agent orchestrator initialized successfully
+2025-10-11 00:33:53,652 ERROR: start() error
+Traceback (most recent call last):
+  File "D:\My-Assistant12\main.py", line 66, in start
+    eel.start(INDEX_PAGE, mode=None, block=True, port=8002)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\eel\__init__.py", line 349, in start
+    run_lambda()
+    ~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\eel\__init__.py", line 340, in run_lambda
+    btl.run(
+    ~~~~~~~^
+        host=HOST,
+        ^^^^^^^^^^
+    ...<2 lines>...
+        quiet=True,
+        ^^^^^^^^^^^
+        app=app)  # Always returns None
+        ^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\bottle.py", line 3985, in run
+    server.run(app)
+    ~~~~~~~~~~^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\bottle_websocket\server.py", line 17, in run
+    server.serve_forever()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\baseserver.py", line 401, in serve_forever
+    self.start()
+    ~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\baseserver.py", line 339, in start
+    self.init_socket()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\pywsgi.py", line 1672, in init_socket
+    StreamServer.init_socket(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\server.py", line 173, in init_socket
+    self.socket = self.get_listener(self.address, self.backlog, self.family)
+                  ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\server.py", line 185, in get_listener
+    return _tcp_listener(address, backlog=backlog, reuse_addr=cls.reuse_addr, family=family)
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\server.py", line 264, in _tcp_listener
+    sock.bind(address)
+    ~~~~~~~~~^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\_socketcommon.py", line 543, in bind
+    return self._sock.bind(address)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted: ('localhost', 8002)
+2025-10-11 00:45:12,628 INFO: ChatbotManager using OllamaService
+2025-10-11 00:45:15,320 INFO: Calibrating microphone for ambient noise...
+2025-10-11 00:45:16,323 INFO: Microphone calibration complete
+2025-10-11 00:45:16,352 INFO: Multi-agent orchestrator initialized successfully
+2025-10-11 00:45:16,526 ERROR: start() error
+Traceback (most recent call last):
+  File "D:\My-Assistant12\main.py", line 66, in start
+    eel.start(INDEX_PAGE, mode=None, block=True, port=8002)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\eel\__init__.py", line 349, in start
+    run_lambda()
+    ~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\eel\__init__.py", line 340, in run_lambda
+    btl.run(
+    ~~~~~~~^
+        host=HOST,
+        ^^^^^^^^^^
+    ...<2 lines>...
+        quiet=True,
+        ^^^^^^^^^^^
+        app=app)  # Always returns None
+        ^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\bottle.py", line 3985, in run
+    server.run(app)
+    ~~~~~~~~~~^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\bottle_websocket\server.py", line 17, in run
+    server.serve_forever()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\baseserver.py", line 401, in serve_forever
+    self.start()
+    ~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\baseserver.py", line 339, in start
+    self.init_socket()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\pywsgi.py", line 1672, in init_socket
+    StreamServer.init_socket(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\server.py", line 173, in init_socket
+    self.socket = self.get_listener(self.address, self.backlog, self.family)
+                  ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\server.py", line 185, in get_listener
+    return _tcp_listener(address, backlog=backlog, reuse_addr=cls.reuse_addr, family=family)
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\server.py", line 264, in _tcp_listener
+    sock.bind(address)
+    ~~~~~~~~~^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\_socketcommon.py", line 543, in bind
+    return self._sock.bind(address)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted: ('localhost', 8002)
+2025-10-11 00:47:30,257 INFO: ChatbotManager using OllamaService
+2025-10-11 00:47:33,978 INFO: Calibrating microphone for ambient noise...
+2025-10-11 00:47:34,982 INFO: Microphone calibration complete
+2025-10-11 00:47:35,021 INFO: Multi-agent orchestrator initialized successfully
+2025-10-11 00:48:46,484 ERROR: Orchestrator error: Already exposed function with name "process_orchestrator_request"
+2025-10-11 00:48:46,485 INFO: Using chatbot for query: hello
+2025-10-11 00:48:46,487 INFO: Processing chat query: hello
+2025-10-11 00:48:46,492 ERROR: Orchestrator error in chatBot: Already exposed function with name "process_orchestrator_request"
+2025-10-11 00:48:50,572 ERROR: OllamaService error
+Traceback (most recent call last):
+  File "D:\My-Assistant12\engine\command.py", line 224, in chatBot
+    from main import process_with_orchestrator
+  File "D:\My-Assistant12\main.py", line 94, in <module>
+    @eel.expose
+     ^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\eel\__init__.py", line 115, in expose
+    _expose(function.__name__, function)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\eel\__init__.py", line 625, in _expose
+    assert name not in _exposed_functions, msg
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Already exposed function with name "process_orchestrator_request"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+    ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<6 lines>...
+        enforce_content_length=enforce_content_length,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 494, in request
+    self.endheaders()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1333, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1093, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1037, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 325, in connect
+    self.sock = self._new_conn()
+                ~~~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000026804430AD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000026804430AD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\My-Assistant12\engine\services\ollama_service.py", line 15, in get_response
+    resp = requests.post(self.api_url, json=payload, stream=stream, timeout=timeout)
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000026804430AD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-10-11 00:48:51,249 INFO: Sent response: 
+2025-10-11 00:48:52,963 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 00:49:06,294 ERROR: Orchestrator error: Already exposed function with name "process_orchestrator_request"
+2025-10-11 00:49:06,296 INFO: Using chatbot for query: kia hall je 
+2025-10-11 00:49:06,297 INFO: Processing chat query: kia hall je 
+2025-10-11 00:49:06,301 ERROR: Orchestrator error in chatBot: Already exposed function with name "process_orchestrator_request"
+2025-10-11 00:49:10,413 ERROR: OllamaService error
+Traceback (most recent call last):
+  File "D:\My-Assistant12\engine\command.py", line 224, in chatBot
+    from main import process_with_orchestrator
+  File "D:\My-Assistant12\main.py", line 94, in <module>
+    @eel.expose
+     ^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\eel\__init__.py", line 115, in expose
+    _expose(function.__name__, function)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\eel\__init__.py", line 625, in _expose
+    assert name not in _exposed_functions, msg
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Already exposed function with name "process_orchestrator_request"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+    ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<6 lines>...
+        enforce_content_length=enforce_content_length,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 494, in request
+    self.endheaders()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1333, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1093, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1037, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 325, in connect
+    self.sock = self._new_conn()
+                ~~~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002680284A210>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002680284A210>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\My-Assistant12\engine\services\ollama_service.py", line 15, in get_response
+    resp = requests.post(self.api_url, json=payload, stream=stream, timeout=timeout)
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002680284A210>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-10-11 00:49:10,428 INFO: Sent response: 
+2025-10-11 00:49:11,974 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 00:51:00,193 ERROR: GEMINI_API_KEY not found
+2025-10-11 00:51:00,194 INFO: ChatbotManager using GeminiService
+2025-10-11 00:51:02,770 INFO: Calibrating microphone for ambient noise...
+2025-10-11 00:51:03,790 INFO: Microphone calibration complete
+2025-10-11 00:51:03,821 INFO: Multi-agent orchestrator initialized successfully
+2025-10-11 00:51:03,966 ERROR: start() error
+Traceback (most recent call last):
+  File "D:\My-Assistant12\main.py", line 66, in start
+    eel.start(INDEX_PAGE, mode=None, block=True, port=8002)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\eel\__init__.py", line 349, in start
+    run_lambda()
+    ~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\eel\__init__.py", line 340, in run_lambda
+    btl.run(
+    ~~~~~~~^
+        host=HOST,
+        ^^^^^^^^^^
+    ...<2 lines>...
+        quiet=True,
+        ^^^^^^^^^^^
+        app=app)  # Always returns None
+        ^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\bottle.py", line 3985, in run
+    server.run(app)
+    ~~~~~~~~~~^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\bottle_websocket\server.py", line 17, in run
+    server.serve_forever()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\baseserver.py", line 401, in serve_forever
+    self.start()
+    ~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\baseserver.py", line 339, in start
+    self.init_socket()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\pywsgi.py", line 1672, in init_socket
+    StreamServer.init_socket(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\server.py", line 173, in init_socket
+    self.socket = self.get_listener(self.address, self.backlog, self.family)
+                  ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\server.py", line 185, in get_listener
+    return _tcp_listener(address, backlog=backlog, reuse_addr=cls.reuse_addr, family=family)
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\server.py", line 264, in _tcp_listener
+    sock.bind(address)
+    ~~~~~~~~~^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\_socketcommon.py", line 543, in bind
+    return self._sock.bind(address)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted: ('localhost', 8002)
+2025-10-11 00:51:08,410 ERROR: Orchestrator error: Already exposed function with name "process_orchestrator_request"
+2025-10-11 00:51:08,411 INFO: Using chatbot for query: hello
+2025-10-11 00:51:08,412 INFO: Processing chat query: hello
+2025-10-11 00:51:08,420 ERROR: Orchestrator error in chatBot: Already exposed function with name "process_orchestrator_request"
+2025-10-11 00:51:12,485 ERROR: OllamaService error
+Traceback (most recent call last):
+  File "D:\My-Assistant12\engine\command.py", line 224, in chatBot
+    from main import process_with_orchestrator
+  File "D:\My-Assistant12\main.py", line 94, in <module>
+    @eel.expose
+     ^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\eel\__init__.py", line 115, in expose
+    _expose(function.__name__, function)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\eel\__init__.py", line 625, in _expose
+    assert name not in _exposed_functions, msg
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Already exposed function with name "process_orchestrator_request"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+    ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<6 lines>...
+        enforce_content_length=enforce_content_length,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 494, in request
+    self.endheaders()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1333, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1093, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1037, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 325, in connect
+    self.sock = self._new_conn()
+                ~~~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002680448C050>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002680448C050>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\My-Assistant12\engine\services\ollama_service.py", line 15, in get_response
+    resp = requests.post(self.api_url, json=payload, stream=stream, timeout=timeout)
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002680448C050>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-10-11 00:51:12,505 INFO: Sent response: 
+2025-10-11 00:51:14,152 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 00:51:25,455 ERROR: Orchestrator error: Already exposed function with name "process_orchestrator_request"
+2025-10-11 00:51:25,455 INFO: Using chatbot for query: bhai jawab de
+2025-10-11 00:51:25,456 INFO: Processing chat query: bhai jawab de
+2025-10-11 00:51:25,458 ERROR: Orchestrator error in chatBot: Already exposed function with name "process_orchestrator_request"
+2025-10-11 00:51:29,560 ERROR: OllamaService error
+Traceback (most recent call last):
+  File "D:\My-Assistant12\engine\command.py", line 224, in chatBot
+    from main import process_with_orchestrator
+  File "D:\My-Assistant12\main.py", line 94, in <module>
+    @eel.expose
+     ^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\eel\__init__.py", line 115, in expose
+    _expose(function.__name__, function)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\eel\__init__.py", line 625, in _expose
+    assert name not in _exposed_functions, msg
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Already exposed function with name "process_orchestrator_request"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+    ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<6 lines>...
+        enforce_content_length=enforce_content_length,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 494, in request
+    self.endheaders()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1333, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1093, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1037, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 325, in connect
+    self.sock = self._new_conn()
+                ~~~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x00000268045C4510>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000268045C4510>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\My-Assistant12\engine\services\ollama_service.py", line 15, in get_response
+    resp = requests.post(self.api_url, json=payload, stream=stream, timeout=timeout)
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000268045C4510>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-10-11 00:51:29,575 INFO: Sent response: 
+2025-10-11 00:51:31,122 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 00:51:31,288 ERROR: Orchestrator error: Already exposed function with name "process_orchestrator_request"
+2025-10-11 00:51:31,288 INFO: Using chatbot for query: kia hua
+2025-10-11 00:51:31,288 INFO: Processing chat query: kia hua
+2025-10-11 00:51:31,290 ERROR: Orchestrator error in chatBot: Already exposed function with name "process_orchestrator_request"
+2025-10-11 00:51:35,398 ERROR: OllamaService error
+Traceback (most recent call last):
+  File "D:\My-Assistant12\engine\command.py", line 224, in chatBot
+    from main import process_with_orchestrator
+  File "D:\My-Assistant12\main.py", line 94, in <module>
+    @eel.expose
+     ^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\eel\__init__.py", line 115, in expose
+    _expose(function.__name__, function)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\eel\__init__.py", line 625, in _expose
+    assert name not in _exposed_functions, msg
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Already exposed function with name "process_orchestrator_request"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+    ~~~~~~~~~~~~^
+        method,
+        ^^^^^^^
+    ...<6 lines>...
+        enforce_content_length=enforce_content_length,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 494, in request
+    self.endheaders()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1333, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1093, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1037, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 325, in connect
+    self.sock = self._new_conn()
+                ~~~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x00000268045C49D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000268045C49D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\My-Assistant12\engine\services\ollama_service.py", line 15, in get_response
+    resp = requests.post(self.api_url, json=payload, stream=stream, timeout=timeout)
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000268045C49D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-10-11 00:51:35,407 INFO: Sent response: 
+2025-10-11 00:51:36,969 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 00:52:19,968 INFO: GeminiService initialized successfully
+2025-10-11 00:52:19,968 INFO: ChatbotManager using GeminiService
+2025-10-11 00:52:21,962 INFO: Calibrating microphone for ambient noise...
+2025-10-11 00:52:22,964 INFO: Microphone calibration complete
+2025-10-11 00:52:22,993 INFO: Multi-agent orchestrator initialized successfully
+2025-10-11 00:52:50,563 INFO: GeminiService initialized successfully
+2025-10-11 00:52:50,563 INFO: ChatbotManager using GeminiService
+2025-10-11 00:52:52,003 INFO: Calibrating microphone for ambient noise...
+2025-10-11 00:52:53,007 INFO: Microphone calibration complete
+2025-10-11 00:52:53,036 INFO: Multi-agent orchestrator initialized successfully
+2025-10-11 00:53:09,279 ERROR: Orchestrator error: Already exposed function with name "process_orchestrator_request"
+2025-10-11 00:53:09,280 INFO: Using chatbot for query: hello
+2025-10-11 00:53:09,280 INFO: Processing chat query: hello
+2025-10-11 00:53:09,284 ERROR: Orchestrator error in chatBot: Already exposed function with name "process_orchestrator_request"
+2025-10-11 00:53:09,890 ERROR: GeminiService error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-11 00:53:09,891 INFO: Sent response: Error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-11 00:53:11,439 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 00:53:32,252 ERROR: Orchestrator error: Already exposed function with name "process_orchestrator_request"
+2025-10-11 00:53:32,253 INFO: Using chatbot for query: what
+2025-10-11 00:53:32,255 INFO: Processing chat query: what
+2025-10-11 00:53:32,265 ERROR: Orchestrator error in chatBot: Already exposed function with name "process_orchestrator_request"
+2025-10-11 00:53:32,450 ERROR: GeminiService error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-11 00:53:32,450 INFO: Sent response: Error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-11 00:53:34,001 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 00:54:28,768 INFO: GeminiService initialized successfully
+2025-10-11 00:54:28,768 INFO: ChatbotManager using GeminiService
+2025-10-11 00:54:30,990 INFO: Calibrating microphone for ambient noise...
+2025-10-11 00:54:31,993 INFO: Microphone calibration complete
+2025-10-11 00:54:32,023 INFO: Multi-agent orchestrator initialized successfully
+2025-10-11 00:54:32,206 ERROR: start() error
+Traceback (most recent call last):
+  File "D:\My-Assistant12\main.py", line 66, in start
+    eel.start(INDEX_PAGE, mode=None, block=True, port=8003)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\eel\__init__.py", line 349, in start
+    run_lambda()
+    ~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\eel\__init__.py", line 340, in run_lambda
+    btl.run(
+    ~~~~~~~^
+        host=HOST,
+        ^^^^^^^^^^
+    ...<2 lines>...
+        quiet=True,
+        ^^^^^^^^^^^
+        app=app)  # Always returns None
+        ^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\bottle.py", line 3985, in run
+    server.run(app)
+    ~~~~~~~~~~^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\bottle_websocket\server.py", line 17, in run
+    server.serve_forever()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\baseserver.py", line 401, in serve_forever
+    self.start()
+    ~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\baseserver.py", line 339, in start
+    self.init_socket()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\pywsgi.py", line 1672, in init_socket
+    StreamServer.init_socket(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\server.py", line 173, in init_socket
+    self.socket = self.get_listener(self.address, self.backlog, self.family)
+                  ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\server.py", line 185, in get_listener
+    return _tcp_listener(address, backlog=backlog, reuse_addr=cls.reuse_addr, family=family)
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\server.py", line 264, in _tcp_listener
+    sock.bind(address)
+    ~~~~~~~~~^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\_socketcommon.py", line 543, in bind
+    return self._sock.bind(address)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted: ('localhost', 8003)
+2025-10-11 00:54:39,095 ERROR: Orchestrator error: Already exposed function with name "process_orchestrator_request"
+2025-10-11 00:54:39,096 INFO: Using chatbot for query: hey
+2025-10-11 00:54:39,096 INFO: Processing chat query: hey
+2025-10-11 00:54:39,099 ERROR: Orchestrator error in chatBot: Already exposed function with name "process_orchestrator_request"
+2025-10-11 00:54:39,300 ERROR: GeminiService error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-11 00:54:39,305 INFO: Sent response: Error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-11 00:54:40,864 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 00:57:47,300 INFO: GeminiService initialized successfully
+2025-10-11 00:57:47,300 INFO: ChatbotManager using GeminiService
+2025-10-11 00:57:49,202 INFO: Calibrating microphone for ambient noise...
+2025-10-11 00:57:50,204 INFO: Microphone calibration complete
+2025-10-11 00:57:50,238 INFO: Multi-agent orchestrator initialized successfully
+2025-10-11 00:57:50,484 ERROR: start() error
+Traceback (most recent call last):
+  File "D:\My-Assistant12\main.py", line 66, in start
+    eel.start(INDEX_PAGE, mode=None, block=True, port=8003)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\eel\__init__.py", line 349, in start
+    run_lambda()
+    ~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\eel\__init__.py", line 340, in run_lambda
+    btl.run(
+    ~~~~~~~^
+        host=HOST,
+        ^^^^^^^^^^
+    ...<2 lines>...
+        quiet=True,
+        ^^^^^^^^^^^
+        app=app)  # Always returns None
+        ^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\bottle.py", line 3985, in run
+    server.run(app)
+    ~~~~~~~~~~^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\bottle_websocket\server.py", line 17, in run
+    server.serve_forever()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\baseserver.py", line 401, in serve_forever
+    self.start()
+    ~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\baseserver.py", line 339, in start
+    self.init_socket()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\pywsgi.py", line 1672, in init_socket
+    StreamServer.init_socket(self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\server.py", line 173, in init_socket
+    self.socket = self.get_listener(self.address, self.backlog, self.family)
+                  ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\server.py", line 185, in get_listener
+    return _tcp_listener(address, backlog=backlog, reuse_addr=cls.reuse_addr, family=family)
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\server.py", line 264, in _tcp_listener
+    sock.bind(address)
+    ~~~~~~~~~^^^^^^^^^
+  File "C:\Users\lenovo 3\AppData\Local\Programs\Python\Python313\Lib\site-packages\gevent\_socketcommon.py", line 543, in bind
+    return self._sock.bind(address)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted: ('localhost', 8003)
+2025-10-11 00:57:55,799 ERROR: Orchestrator error: Already exposed function with name "process_orchestrator_request"
+2025-10-11 00:57:55,800 INFO: Using chatbot for query: hey
+2025-10-11 00:57:55,800 INFO: Processing chat query: hey
+2025-10-11 00:57:55,802 ERROR: Orchestrator error in chatBot: Already exposed function with name "process_orchestrator_request"
+2025-10-11 00:57:57,648 ERROR: GeminiService error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-11 00:57:57,648 INFO: Sent response: Error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-11 00:57:59,200 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 01:00:48,868 ERROR: Orchestrator error: Already exposed function with name "process_orchestrator_request"
+2025-10-11 01:00:48,869 INFO: Using chatbot for query: hello
+2025-10-11 01:00:48,870 INFO: Processing chat query: hello
+2025-10-11 01:00:48,875 ERROR: Orchestrator error in chatBot: Already exposed function with name "process_orchestrator_request"
+2025-10-11 01:00:49,061 ERROR: GeminiService error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-11 01:00:49,062 INFO: Sent response: Error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-11 01:00:50,599 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 01:04:30,844 ERROR: Orchestrator error: Already exposed function with name "process_orchestrator_request"
+2025-10-11 01:04:30,844 INFO: Using chatbot for query: hey
+2025-10-11 01:04:30,844 INFO: Processing chat query: hey
+2025-10-11 01:04:30,846 ERROR: Orchestrator error in chatBot: Already exposed function with name "process_orchestrator_request"
+2025-10-11 01:04:31,710 ERROR: GeminiService error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-11 01:04:31,711 INFO: Sent response: Error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-11 01:04:33,273 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 01:04:59,980 ERROR: Orchestrator error: Already exposed function with name "process_orchestrator_request"
+2025-10-11 01:04:59,980 INFO: Using chatbot for query: hello
+2025-10-11 01:04:59,980 INFO: Processing chat query: hello
+2025-10-11 01:04:59,982 ERROR: Orchestrator error in chatBot: Already exposed function with name "process_orchestrator_request"
+2025-10-11 01:05:00,157 ERROR: GeminiService error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-11 01:05:00,158 INFO: Sent response: Error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-11 01:05:01,703 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 01:08:59,603 ERROR: Orchestrator error: Already exposed function with name "process_orchestrator_request"
+2025-10-11 01:08:59,604 INFO: Using chatbot for query: hey
+2025-10-11 01:08:59,605 INFO: Processing chat query: hey
+2025-10-11 01:08:59,616 ERROR: Orchestrator error in chatBot: Already exposed function with name "process_orchestrator_request"
+2025-10-11 01:09:00,733 ERROR: GeminiService error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-11 01:09:00,734 INFO: Sent response: Error: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-10-11 01:09:02,289 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 01:09:39,701 INFO: GeminiService initialized successfully
+2025-10-11 01:09:39,702 INFO: ChatbotManager using GeminiService
+2025-10-11 01:09:41,723 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:09:42,727 INFO: Microphone calibration complete
+2025-10-11 01:09:42,758 INFO: Multi-agent orchestrator initialized successfully
+2025-10-11 01:09:48,934 ERROR: Orchestrator error: Already exposed function with name "process_orchestrator_request"
+2025-10-11 01:09:48,936 INFO: Using chatbot for query: hello
+2025-10-11 01:09:48,943 INFO: Processing chat query: hello
+2025-10-11 01:09:48,950 ERROR: Orchestrator error in chatBot: Already exposed function with name "process_orchestrator_request"
+2025-10-11 01:10:11,931 INFO: Sent response: Hello! How can I help you today?
+2025-10-11 01:10:13,501 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 01:10:35,121 ERROR: Orchestrator error: Already exposed function with name "process_orchestrator_request"
+2025-10-11 01:10:36,675 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 01:10:58,721 ERROR: Orchestrator error: Already exposed function with name "process_orchestrator_request"
+2025-10-11 01:11:00,265 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 01:11:20,404 ERROR: Orchestrator error: Already exposed function with name "process_orchestrator_request"
+2025-10-11 01:11:20,408 INFO: Using chatbot for query: open notepade
+2025-10-11 01:11:20,409 INFO: Processing chat query: open notepade
+2025-10-11 01:11:20,413 ERROR: Orchestrator error in chatBot: Already exposed function with name "process_orchestrator_request"
+2025-10-11 01:11:22,720 INFO: Sent response: I apologize, but as a large language model, I cannot directly open applications on your computer. I don't have access to your operating system or files.
+
+You'll need to open Notepad yourself. You can usually do this by:
+
+*   Typing "notepad" into the Windows search bar (bottom left of your screen).
+*   Going to the Start Menu > Windows Accessories > Notepad.
+
+Is there anything else I can help you with today, perhaps by providing information or writing text?
+2025-10-11 01:11:24,280 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 01:12:18,437 ERROR: Orchestrator error: Already exposed function with name "process_orchestrator_request"
+2025-10-11 01:12:19,977 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 01:12:50,681 ERROR: Orchestrator error: Already exposed function with name "process_orchestrator_request"
+2025-10-11 01:12:50,684 INFO: Using chatbot for query: open linkedin
+2025-10-11 01:12:50,685 INFO: Processing chat query: open linkedin
+2025-10-11 01:12:50,689 ERROR: Orchestrator error in chatBot: Already exposed function with name "process_orchestrator_request"
+2025-10-11 01:12:55,088 INFO: Sent response: I apologize, but I still cannot directly open applications or websites on your computer. As a large language model, I don't have access to your operating system, web browser, or files.
+
+To open LinkedIn, you'll need to do it yourself:
+
+*   **Open your web browser** (like Chrome, Firefox, Edge, Safari) and type `www.linkedin.com` into the address bar, then press Enter.
+*   If you have the **LinkedIn desktop app** installed, you can usually find it by typing "LinkedIn" into your computer's search bar (e.g., Windows Search) or looking in your Start Menu/Applications folder.
+
+Is there anything else I can help you with today, perhaps by providing information about LinkedIn, helping you draft a message, or answering a question?
+2025-10-11 01:12:56,646 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 01:14:58,251 INFO: GeminiService initialized successfully
+2025-10-11 01:14:58,251 INFO: ChatbotManager using GeminiService
+2025-10-11 01:14:59,955 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:15:00,961 INFO: Microphone calibration complete
+2025-10-11 01:15:01,001 INFO: Multi-agent orchestrator initialized successfully
+2025-10-11 01:15:08,265 ERROR: Orchestrator error: Already exposed function with name "process_orchestrator_request"
+2025-10-11 01:15:08,267 INFO: Using chatbot for query: open linkend
+2025-10-11 01:15:08,267 INFO: Processing chat query: open linkend
+2025-10-11 01:15:08,506 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:15:09,513 INFO: Microphone calibration complete
+2025-10-11 01:15:13,416 ERROR: Error processing app request: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-10-11 01:15:13,417 INFO: Sent response: [AppOpeningAgent] Error processing request: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-10-11 01:15:14,973 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 01:17:26,415 INFO: GeminiService initialized successfully
+2025-10-11 01:17:26,416 INFO: ChatbotManager using GeminiService
+2025-10-11 01:17:29,929 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:17:30,934 INFO: Microphone calibration complete
+2025-10-11 01:17:30,970 INFO: Multi-agent orchestrator initialized successfully
+2025-10-11 01:17:56,765 INFO: GeminiService initialized successfully
+2025-10-11 01:17:56,765 INFO: ChatbotManager using GeminiService
+2025-10-11 01:17:58,670 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:17:59,676 INFO: Microphone calibration complete
+2025-10-11 01:17:59,719 INFO: Multi-agent orchestrator initialized successfully
+2025-10-11 01:18:17,421 ERROR: Orchestrator error: Already exposed function with name "process_orchestrator_request"
+2025-10-11 01:18:17,423 INFO: Using chatbot for query: open linkend
+2025-10-11 01:18:17,423 INFO: Processing chat query: open linkend
+2025-10-11 01:18:17,735 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:18:18,741 INFO: Microphone calibration complete
+2025-10-11 01:18:30,582 INFO: Sent response: [AppOpeningAgent] It looks like you want to open **LinkedIn**! "Linkend" is a common misspelling. LinkedIn is a professional networking platform.
+
+Here's how you can open it on your Windows computer:
+
+### Option 1: Open the LinkedIn Desktop App (if installed)
+
+If you have the LinkedIn app installed on your computer, this is the quickest way:
+
+1.  **Click the Start button** (the Windows logo) in the bottom-left corner of your screen.
+2.  **Type `LinkedIn`** (or even `Linkend`) into the search bar that appears.
+3.  Look for "LinkedIn" in the search results (it usually has a blue icon with "in") and **click on it**.
+
+*   **Alternatively:** If you have a LinkedIn shortcut on your desktop or pinned to your taskbar, simply click or double-click its icon.
+
+### Option 2: Open LinkedIn in a Web Browser (most common way)
+
+If you don't have the desktop app or prefer to use the website, you can access it through any web browser:
+
+1.  **Open your preferred web browser.** This could be:
+    *   **Microsoft Edge** (often pinned to the taskbar, looks like a blue and green swirl "e").
+    *   **Google Chrome** (looks like a red, yellow, and green circle).
+    *   **Mozilla Firefox** (looks like an orange fox wrapping around a blue globe).
+    *   You can open your browser by clicking its icon on your taskbar or by searching for it in the Start menu.
+2.  Once your browser is open, **click on the address bar** at the very top of the window (where website addresses are typed).
+3.  **Type `linkedin.com`** and then press the **Enter** key on your keyboard.
+4.  You will be taken to the LinkedIn website, where you can log in or access your profile.
+
+### Alternatives / Tips:
+
+*   **Download the App:** If you prefer a dedicated app and don't have it, you can download the LinkedIn app from the **Microsoft Store**. Just open the Microsoft Store app (search for it in the Start menu) and search for "LinkedIn."
+*   **Check Spelling:** Remember to use the correct spelling **LinkedIn** when searching or typing, as it will help you find it more easily.
+2025-10-11 01:18:32,215 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 01:19:42,204 INFO: GeminiService initialized successfully
+2025-10-11 01:19:42,205 INFO: ChatbotManager using GeminiService
+2025-10-11 01:19:44,385 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:19:45,392 INFO: Microphone calibration complete
+2025-10-11 01:19:45,437 INFO: Multi-agent orchestrator initialized successfully
+2025-10-11 01:19:55,832 ERROR: Orchestrator error: Already exposed function with name "process_orchestrator_request"
+2025-10-11 01:19:57,401 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 01:20:19,256 ERROR: Orchestrator error: Already exposed function with name "process_orchestrator_request"
+2025-10-11 01:20:19,257 INFO: Using chatbot for query: why are you doing
+2025-10-11 01:20:19,258 INFO: Processing chat query: why are you doing
+2025-10-11 01:20:19,564 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:20:20,567 INFO: Microphone calibration complete
+2025-10-11 01:20:23,580 ERROR: Error routing request: type object 'Runner' has no attribute 'run_sync'
+2025-10-11 01:20:29,310 INFO: Sent response: Could you please clarify what you mean?
+
+Are you asking:
+*   **Why I'm responding to you right now?** (Because you asked a question!)
+*   **What my general purpose is?** (As an AI, my goal is to assist users, answer questions, provide information, and engage in helpful conversation.)
+*   **Something else entirely?**
+
+Please let me know!
+2025-10-11 01:20:30,936 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 01:21:28,900 ERROR: Orchestrator error: Already exposed function with name "process_orchestrator_request"
+2025-10-11 01:21:28,901 INFO: Using chatbot for query: can you make a project perposal accodin deu lingo
+2025-10-11 01:21:28,903 INFO: Processing chat query: can you make a project perposal accodin deu lingo
+2025-10-11 01:21:29,213 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:21:30,219 INFO: Microphone calibration complete
+2025-10-11 01:21:34,806 ERROR: Error routing request: type object 'Runner' has no attribute 'run_sync'
+2025-10-11 01:22:01,368 INFO: Sent response: Okay, this is a fun challenge! Let's craft a project proposal that sounds like something Duolingo itself would develop, focusing on their core principles: gamification, accessibility, and making language learning practical and engaging.
+
+---
+
+## Project Proposal: Duolingo "Life Scenarios" – Beyond the Sentence
+
+**Project Title:** Duolingo "Life Scenarios" (DLS)
+
+**Executive Summary:**
+Duolingo "Life Scenarios" is an innovative new feature designed to bridge the gap between structured lesson learning and real-world language application. Building on Duolingo's successful gamified approach, DLS will introduce interactive, branching story modules that simulate common real-life situations (e.g., ordering food, checking into a hotel, asking for directions). Users will role-play as a character, making choices and speaking/typing responses, to navigate scenarios and build confidence in practical conversational skills.
+
+**Problem Statement:**
+While Duolingo excels at building foundational vocabulary, grammar, and basic sentence construction, many users express a desire for more contextualized practice that mimics authentic, dynamic conversations. Learners often feel confident with individual words or phrases but struggle to string them together spontaneously and appropriately in real-time, especially when faced with varying responses or unexpected turns in a conversation. There's a need for a safe, gamified environment to practice these practical, high-stakes interactions without the fear of real-world mistakes.
+
+**Solution: Duolingo "Life Scenarios" (DLS)**
+DLS will be an integrated module within existing Duolingo courses, offering a series of themed, interactive role-playing experiences. Each "Scenario" will be a short, engaging story where the user takes on a persona and interacts with AI-driven characters to achieve a specific goal (e.g., successfully order a meal, find a train station).
+
+**Key Features:**
+
+1.  **Interactive, Branching Dialogues:**
+    *   Users will be presented with a situation and a character to interact with.
+    *   At key decision points, users choose from several dialogue options (or formulate their own via speaking/typing).
+    *   Choices lead to different responses and outcomes, encouraging replayability and exploration of linguistic nuances.
+    *   *Example:* "Do you want sparkling or still water?" (User selects or says "Still, please.")
+
+2.  **Role-Playing & Persona:**
+    *   Users adopt a simple persona (e.g., a tourist, a student, a customer) within the scenario, making the practice more immersive.
+    *   Character artwork and voice acting for the AI-driven interlocutors to enhance immersion.
+
+3.  **Contextual Vocabulary & Phrases:**
+    *   Each scenario will introduce and reinforce vocabulary and phrases specific to that situation, with pop-up explanations for new terms.
+    *   Focus on common idioms, polite forms, and cultural considerations.
+
+4.  **Pronunciation & Speaking Practice:**
+    *   Leverage Duolingo's existing speech recognition technology to allow users to speak their chosen lines, providing instant feedback.
+    *   Emphasis on natural intonation and flow.
+
+5.  **Gamified Progression & Rewards:**
+    *   **Scenario Badges:** Earn unique badges for completing scenarios.
+    *   **"Conversation Confidence Score":** A new metric reflecting successful navigation of scenarios, rewarding effective communication over just correct grammar.
+    *   **XP Boosts:** Complete scenarios for substantial XP rewards, encouraging engagement.
+    *   **Streak Integration:** Successful scenario completion contributes to daily streaks.
+    *   **"Duo's Approval":** Duo the owl provides encouraging feedback and humorous interventions.
+
+6.  **Cultural Insights:**
+    *   "Culture Corner" tips embedded within scenarios, explaining local customs, etiquette, and social cues relevant to the interaction.
+
+7.  **Adaptive Learning:**
+    *   Scenarios can dynamically adjust difficulty based on user performance, re-presenting challenging phrases or concepts.
+
+**Target Audience:**
+*   **Intermediate Duolingo Learners:** Those who have completed significant portions of a course and are ready to apply their knowledge.
+*   **Travelers:** Individuals preparing for a trip who want practical conversational skills.
+*   **Beginners (with simplified scenarios):** To introduce the concept of conversational flow early.
+*   **Users seeking practical application:** Anyone looking to build confidence in speaking and understanding natural dialogue.
+
+**Benefits:**
+
+*   **For Users:**
+    *   Increased confidence in real-world language use.
+    *   Enhanced practical communication skills (speaking, listening comprehension in context).
+    *   Deeper understanding of cultural nuances.
+    *   More engaging and immersive learning experience.
+    *   Reduced anxiety about making mistakes in real situations.
+*   **For Duolingo:**
+    *   **Increased User Engagement & Retention:** Provides a fresh, highly engaging learning modality.
+    *   **Differentiation:** Sets Duolingo apart from other apps by offering practical, interactive conversation practice at scale.
+    *   **New Monetization Opportunities:** Advanced scenarios could be part of Super Duolingo, or bundled into themed "Travel Packs."
+    *   **Data Insights:** Rich data on user conversational patterns and common stumbling blocks.
+    *   **Brand Enhancement:** Reinforces Duolingo's commitment to making language learning fun, effective, and relevant.
+
+**Metrics for Success:**
+*   **Scenario Completion Rates:** Percentage of users starting and finishing scenarios.
+*   **Engagement Time:** Average time spent within DLS modules.
+*   **Repeat Playthroughs:** How often users retry scenarios to explore different branches or improve scores.
+*   **User Feedback & NPS Scores:** Positive sentiment, specific requests.
+*   **Super Duolingo Conversion Rates:** Impact on premium subscriptions.
+*   **Social Media Mentions:** Buzz generated around the new feature.
+
+**Phased Rollout Plan:**
+
+*   **Phase 1 (MVP - 3-6 months):**
+    *   Develop core interactive dialogue engine.
+    *   Launch with 5-7 core scenarios in 3-5 high-demand languages (e.g., Spanish, French, German, Japanese).
+    *   Focus on basic "survival" scenarios (ordering coffee, asking for directions, hotel check-in).
+    *   Basic gamification (XP, completion badges).
+*   **Phase 2 (6-12 months):**
+    *   Expand to more languages and a wider variety of scenarios (e.g., shopping, small talk, medical situations).
+    *   Implement advanced branching and more complex choices.
+    *   Introduce "Conversation Confidence Score" and deeper cultural insights.
+    *   Refine speech recognition for nuanced responses.
+*   **Phase 3 (12+ months):**
+    *   Integrate AI-driven dynamic responses for even more realistic interactions (exploring LLM capabilities).
+    *   Potentially allow users to "build their own" simple scenarios or share community-contributed ones (with moderation).
+    *   Introduce "challenge mode" scenarios with time limits or specific linguistic goals.
+
+**Potential Challenges:**
+*   **Content Creation at Scale:** Developing high-quality, engaging, and culturally accurate scenarios across many languages requires significant resources (writers, voice actors, linguists).
+*   **AI Dialogue Complexity:** Ensuring AI characters provide natural and helpful responses, especially with branching narratives.
+*   **Speech Recognition Accuracy:** Maintaining high accuracy for diverse accents and non-native speech.
+*   **Maintaining Gamification:** Ensuring the scenarios remain fun and motivating without becoming repetitive.
+
+**Conclusion:**
+Duolingo "Life Scenarios" represents a natural and essential evolution for the Duolingo platform. By providing a safe, fun, and gamified environment for practical conversational practice, DLS will empower users to move beyond theoretical knowledge and confidently apply their language skills in real-world situations. This project will significantly enhance the learning experience, boost user engagement, and solidify Duolingo's position as the world's most effective and accessible language-learning platform. Let's make Duo proud!
+2025-10-11 01:22:02,933 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 01:30:38,171 INFO: GeminiService initialized successfully
+2025-10-11 01:30:38,172 INFO: ChatbotManager using GeminiService
+2025-10-11 01:30:38,176 INFO: GeminiService initialized successfully
+2025-10-11 01:30:38,176 INFO: ChatbotManager using GeminiService
+2025-10-11 01:32:07,412 INFO: GeminiService initialized successfully
+2025-10-11 01:32:07,413 INFO: ChatbotManager using GeminiService
+2025-10-11 01:32:07,414 INFO: GeminiService initialized successfully
+2025-10-11 01:32:07,414 INFO: ChatbotManager using GeminiService
+2025-10-11 01:33:01,674 INFO: GeminiService initialized successfully
+2025-10-11 01:33:01,674 INFO: ChatbotManager using GeminiService
+2025-10-11 01:33:01,675 INFO: GeminiService initialized successfully
+2025-10-11 01:33:01,675 INFO: ChatbotManager using GeminiService
+2025-10-11 01:33:04,179 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:33:05,184 INFO: Microphone calibration complete
+2025-10-11 01:33:05,232 INFO: Multi-agent orchestrator initialized successfully
+2025-10-11 01:33:19,632 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:33:20,646 INFO: Microphone calibration complete
+2025-10-11 01:33:49,105 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:33:50,110 INFO: Microphone calibration complete
+2025-10-11 01:34:15,476 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:34:16,481 INFO: Microphone calibration complete
+2025-10-11 01:34:40,302 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:34:41,311 INFO: Microphone calibration complete
+2025-10-11 01:35:08,420 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:35:09,424 INFO: Microphone calibration complete
+2025-10-11 01:35:22,990 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:35:23,995 INFO: Microphone calibration complete
+2025-10-11 01:35:34,227 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:35:35,239 INFO: Microphone calibration complete
+2025-10-11 01:35:38,933 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:35:39,936 INFO: Microphone calibration complete
+2025-10-11 01:35:42,744 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:35:43,749 INFO: Microphone calibration complete
+2025-10-11 01:35:47,422 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:35:48,425 INFO: Microphone calibration complete
+2025-10-11 01:35:52,066 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:35:53,070 INFO: Microphone calibration complete
+2025-10-11 01:35:56,848 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:35:57,852 INFO: Microphone calibration complete
+2025-10-11 01:36:01,802 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:36:02,807 INFO: Microphone calibration complete
+2025-10-11 01:36:15,402 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:36:16,407 INFO: Microphone calibration complete
+2025-10-11 01:36:53,598 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:36:54,603 INFO: Microphone calibration complete
+2025-10-11 01:37:19,406 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:37:20,412 INFO: Microphone calibration complete
+2025-10-11 01:37:55,328 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:37:56,336 INFO: Microphone calibration complete
+2025-10-11 01:40:57,371 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:40:58,374 INFO: Microphone calibration complete
+2025-10-11 01:41:53,511 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:41:54,515 INFO: Microphone calibration complete
+2025-10-11 01:44:31,524 INFO: GeminiService initialized successfully
+2025-10-11 01:44:31,524 INFO: ChatbotManager using GeminiService
+2025-10-11 01:44:31,526 INFO: GeminiService initialized successfully
+2025-10-11 01:44:31,526 INFO: ChatbotManager using GeminiService
+2025-10-11 01:44:34,205 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:44:35,209 INFO: Microphone calibration complete
+2025-10-11 01:44:35,249 INFO: Multi-agent orchestrator initialized successfully
+2025-10-11 01:44:49,501 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 01:44:51,741 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:44:52,745 INFO: Microphone calibration complete
+2025-10-11 01:45:11,497 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 01:45:13,575 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:45:14,578 INFO: Microphone calibration complete
+2025-10-11 01:45:42,169 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 01:45:44,235 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:45:45,238 INFO: Microphone calibration complete
+2025-10-11 01:46:19,219 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:46:20,223 INFO: Microphone calibration complete
+2025-10-11 01:46:52,120 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 01:46:54,672 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:46:55,679 INFO: Microphone calibration complete
+2025-10-11 01:50:05,600 INFO: GeminiService initialized successfully
+2025-10-11 01:50:05,600 INFO: ChatbotManager using GeminiService
+2025-10-11 01:50:05,601 INFO: GeminiService initialized successfully
+2025-10-11 01:50:05,602 INFO: ChatbotManager using GeminiService
+2025-10-11 01:50:07,733 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:50:08,738 INFO: Microphone calibration complete
+2025-10-11 01:50:08,773 INFO: Multi-agent orchestrator initialized successfully
+2025-10-11 01:50:26,589 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 01:50:28,741 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:50:29,745 INFO: Microphone calibration complete
+2025-10-11 01:50:50,519 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 01:50:52,188 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:50:53,192 INFO: Microphone calibration complete
+2025-10-11 01:51:10,173 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 01:51:12,334 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:51:13,337 INFO: Microphone calibration complete
+2025-10-11 01:51:35,705 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 01:51:38,753 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:51:39,756 INFO: Microphone calibration complete
+2025-10-11 01:52:10,663 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:52:11,666 INFO: Microphone calibration complete
+2025-10-11 01:52:38,919 WARNING: safe_eel_call: JS function DisplayMessage not available after 6 retries
+2025-10-11 01:52:41,117 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:52:42,122 INFO: Microphone calibration complete
+2025-10-11 01:52:57,594 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:52:58,598 INFO: Microphone calibration complete
+2025-10-11 01:55:30,497 INFO: Calibrating microphone for ambient noise...
+2025-10-11 01:55:31,502 INFO: Microphone calibration complete
